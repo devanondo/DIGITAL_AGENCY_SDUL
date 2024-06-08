@@ -1,3 +1,5 @@
+import logo_1 from './images/logo/logo-1.svg'
+
 import bg_blur_shep_1 from './images/shep/bg-blur-shep-1.png'
 import home_1_hero_slider from './images/banner/home-1-hero-slider.png'
 import text_shep_1 from './images/shep/text-shep-1.png'
@@ -25,8 +27,19 @@ import active_brand_logo_3 from './images/home-1/active-brand-logo-3.png'
 import active_brand_logo_4 from './images/home-1/active-brand-logo-4.png'
 
 import media_banner_home_3 from './images/home-3/media-banner-home-3.png'
+import client_say from './images/banner/client-say.png'
+
+import blog_img_1_home_1 from './images/home-1/blog-img-1-home-1.png'
+import blog_img_2_home_1 from './images/home-1/blog-img-2-home-1.png'
+import blog_img_3_home_1 from './images/home-1/blog-img-3-home-1.png'
+import blog_img_4_home_1 from './images/home-1/blog-img-4-home-1.png'
+
+import footer_chat_bg_shape_home_3 from './images/home-3/footer-chat-bg-shep-home-3.png'
+import footer_bg_home_2 from './images/home-2/footer-bg-home-2.png'
 
 export const asset = {
+    logo_1,
+
     bg_blur_shep_1,
     home_1_hero_slider,
     text_shep_1,
@@ -57,4 +70,15 @@ export const asset = {
     active_brand_logo_4,
 
     media_banner_home_3,
+
+    client_say,
+
+    blog_img_1_home_1,
+    blog_img_2_home_1,
+    blog_img_3_home_1,
+    blog_img_4_home_1,
+
+    footer_chat_bg_shape_home_3,
+
+    footer_bg_home_2,
 }
