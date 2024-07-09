@@ -4,6 +4,7 @@ import HomeThree from '../pages/home-3'
 import About from '../pages/about'
 import Team from '../pages/team'
 import Faq from '../pages/faq'
+import Price from '../pages/price'
 
 const Routes = () => {
     const router = createBrowserRouter([
@@ -26,6 +27,10 @@ const Routes = () => {
         {
             path: '/faq',
             element: <Faq />,
+        },
+        {
+            path: '/price',
+            element: <Price />,
         },
     ])
 
