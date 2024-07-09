@@ -1,3 +1,4 @@
+import Digital_product_Home_3 from '../components/digital-product-home-3'
 import Marquee_Area_Home_3 from '../components/marquee-area-home-3'
 import Offer_Area_Home_3 from '../components/offer-area-home-3'
 import Services_Area_Home_2 from '../components/services-area-home-2'
@@ -11,6 +12,7 @@ const HomeThree = () => {
             <Offer_Area_Home_3 />
             <Marquee_Area_Home_3 />
             <Services_Area_Home_2 />
+            <Digital_product_Home_3 />
             <Footer />
         </>
     )

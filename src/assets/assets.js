@@ -40,17 +40,23 @@ import footer_bg_home_2 from './images/home-2/footer-bg-home-2.png'
 // home 3
 import bg_blur_shep_3 from './images/shep/bg-blur-shep-3.png'
 import text_shep_2 from './images/shep/text-shep-2.png'
+
 import rating from './images/hero/rating.png'
+
 import home_3_hero_slider from './images/banner/home-3-hero-slider.png'
 import home_3_hero_banner_shep_1 from './images/shep/home-3-hero-banner-shep-1.png'
 import home_3_hero_banner_shep_2 from './images/shep/home-3-hero-banner-shep-2.png'
 import home_3_hero_banner_shep_3 from './images/shep/home-3-hero-banner-shep-3.png'
 import home_3_hero_banner_shep_4 from './images/shep/home-3-hero-banner-shep-4.png'
+
 import offer_1_home_3 from './images/home-3/offer-1-home-3.png'
 import offer_2_home_3 from './images/home-3/offer-1-home-3.png'
 import offer_3_home_3 from './images/home-3/offer-1-home-3.png'
+
 import services_1_home_3 from './images/home-3/services-1-home-3.png'
 import services_2_home_3 from './images/home-3/services-2-home-3.png'
+
+import digital_product_bg from './images/home-3/digital-product-bg.png'
 
 export const asset = {
     logo_1,
@@ -114,4 +120,5 @@ export const asset = {
 
     services_1_home_3,
     services_2_home_3,
+    digital_product_bg
 }
