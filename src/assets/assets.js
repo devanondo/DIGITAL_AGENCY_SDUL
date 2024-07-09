@@ -60,6 +60,8 @@ import digital_product_bg from './images/home-3/digital-product-bg.png'
 
 import best_services_banner from './images/home-3/best-services-banner.png'
 
+import weekly_meet_MP4 from './images/banner/weekly-meet.mp4'
+
 export const asset = {
     logo_1,
 
@@ -126,4 +128,5 @@ export const asset = {
     digital_product_bg,
 
     best_services_banner,
+    weekly_meet_MP4,
 }
