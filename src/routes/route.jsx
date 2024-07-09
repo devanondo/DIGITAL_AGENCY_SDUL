@@ -6,6 +6,7 @@ import Team from '../pages/team'
 import Faq from '../pages/faq'
 import Price from '../pages/price'
 import NotFound from '../pages/notFound'
+import Services from '../pages/services'
 
 const Routes = () => {
     const router = createBrowserRouter([
@@ -36,6 +37,10 @@ const Routes = () => {
         {
             path: '/notFound',
             element: <NotFound />,
+        },
+        {
+            path: '/services',
+            element: <Services />,
         },
     ])
 
