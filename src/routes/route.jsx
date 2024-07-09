@@ -3,6 +3,7 @@ import HomeOne from '../pages/home-1'
 import HomeThree from '../pages/home-3'
 import About from '../pages/about'
 import Team from '../pages/team'
+import Faq from '../pages/faq'
 
 const Routes = () => {
     const router = createBrowserRouter([
@@ -21,6 +22,10 @@ const Routes = () => {
         {
             path: '/team',
             element: <Team />,
+        },
+        {
+            path: '/faq',
+            element: <Faq />,
         },
     ])
 

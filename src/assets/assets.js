@@ -71,6 +71,9 @@ import about_team_2 from './images/about/about-team-2.png'
 import about_team_3 from './images/about/about-team-3.png'
 import about_team_4 from './images/about/about-team-4.png'
 
+// faq
+import faq_banner_home_2 from './images/home-2/faq-banner-home-2.png'
+
 export const asset = {
     logo_1,
     logo_2,
@@ -147,4 +150,6 @@ export const asset = {
     about_team_2,
     about_team_3,
     about_team_4,
+
+    faq_banner_home_2,
 }
