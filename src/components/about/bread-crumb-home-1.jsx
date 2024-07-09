@@ -1,6 +1,6 @@
 import { asset } from '../../assets/assets'
 
-const Bread_Crumb_Home_1 = () => {
+const Bread_Crumb_Home_One = () => {
     return (
         <section
             className="bread-crumb-area"
@@ -34,4 +34,4 @@ const Bread_Crumb_Home_1 = () => {
         </section>
     )
 }
-export default Bread_Crumb_Home_1
+export default Bread_Crumb_Home_One
