@@ -59,8 +59,12 @@ import services_2_home_3 from './images/home-3/services-2-home-3.png'
 import digital_product_bg from './images/home-3/digital-product-bg.png'
 import best_services_banner from './images/home-3/best-services-banner.png'
 import weekly_meet_MP4 from './images/banner/weekly-meet.mp4'
-
 import blog_writer_home_3 from './images/home-3/blog-writer-home-3.png'
+
+import breadcrumb_bg from './images/banner/breadcrumb-bg.png'
+import about from './images/about/about.png'
+import about_avatar from './images/about/about-avatar.png'
+import avatar_text_shep from './images/about/avatar-text-shep.png'
 
 export const asset = {
     logo_1,
@@ -74,7 +78,9 @@ export const asset = {
     offer_3,
 
     about_home_1,
-
+    about,
+    about_avatar,
+    avatar_text_shep,
     ppc_agency_1,
     ppc_agency_2,
     ppc_agency_3,
@@ -129,6 +135,6 @@ export const asset = {
 
     best_services_banner,
     weekly_meet_MP4,
-
     blog_writer_home_3,
+    breadcrumb_bg,
 }
