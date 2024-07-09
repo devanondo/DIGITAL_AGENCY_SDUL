@@ -46,6 +46,9 @@ import home_3_hero_banner_shep_1 from './images/shep/home-3-hero-banner-shep-1.p
 import home_3_hero_banner_shep_2 from './images/shep/home-3-hero-banner-shep-2.png'
 import home_3_hero_banner_shep_3 from './images/shep/home-3-hero-banner-shep-3.png'
 import home_3_hero_banner_shep_4 from './images/shep/home-3-hero-banner-shep-4.png'
+import offer_1_home_3 from './images/home-3/offer-1-home-3.png'
+import offer_2_home_3 from './images/home-3/offer-1-home-3.png'
+import offer_3_home_3 from './images/home-3/offer-1-home-3.png'
 
 export const asset = {
     logo_1,
@@ -100,4 +103,7 @@ export const asset = {
     home_3_hero_banner_shep_2,
     home_3_hero_banner_shep_3,
     home_3_hero_banner_shep_4,
+    offer_1_home_3,
+    offer_2_home_3,
+    offer_3_home_3
 }
