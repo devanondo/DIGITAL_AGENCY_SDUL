@@ -12,15 +12,12 @@ const Footer_Home_3 = () => {
                         <div className="col-xl-4 col-lg-4 col-md-7 col-sm-12">
                             <div className="footer-item-1">
                                 <a href="index.html">
-                                    <img
-                                        src="assets/images/logo/logo-2.svg"
-                                        alt="VRE"
-                                    />
+                                    <img src={asset.logo_2} alt="VRE" />
                                 </a>
                                 <p className="font-size-1-16">
-                                    The world’s first and largest digital market{' '}
+                                    The world’s first and largest digital market
                                     <br />
-                                    for crypto collectibles and non-fungible{' '}
+                                    for crypto collectibles and non-fungible
                                     <br />
                                     (NFTs). Buy
                                 </p>
@@ -198,7 +195,7 @@ const Footer_Home_3 = () => {
                 <div className="footer-support">
                     <div className="footer-call">
                         <img
-                            src="assets/images/home-3/footer-chat-bg-shep-home-3.png"
+                            src={asset.footer_chat_bg_shape_home_3}
                             alt="VRE"
                         />
                         <div className="footer-support-icon">

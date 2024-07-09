@@ -1,4 +1,5 @@
 import logo_1 from './images/logo/logo-1.svg'
+import logo_2 from './images/logo/logo-2.svg'
 
 import bg_blur_shep_1 from './images/shep/bg-blur-shep-1.png'
 import home_1_hero_slider from './images/banner/home-1-hero-slider.png'
@@ -63,7 +64,7 @@ import blog_writer_home_3 from './images/home-3/blog-writer-home-3.png'
 
 export const asset = {
     logo_1,
-
+    logo_2,
     bg_blur_shep_1,
     home_1_hero_slider,
     text_shep_1,
