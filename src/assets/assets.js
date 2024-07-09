@@ -66,6 +66,11 @@ import about from './images/about/about.png'
 import about_avatar from './images/about/about-avatar.png'
 import avatar_text_shep from './images/about/avatar-text-shep.png'
 
+import about_team_1 from './images/about/about-team-1.png'
+import about_team_2 from './images/about/about-team-2.png'
+import about_team_3 from './images/about/about-team-3.png'
+import about_team_4 from './images/about/about-team-4.png'
+
 export const asset = {
     logo_1,
     logo_2,
@@ -137,4 +142,9 @@ export const asset = {
     weekly_meet_MP4,
     blog_writer_home_3,
     breadcrumb_bg,
+
+    about_team_1,
+    about_team_2,
+    about_team_3,
+    about_team_4,
 }
