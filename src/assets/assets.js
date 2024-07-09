@@ -55,12 +55,11 @@ import offer_3_home_3 from './images/home-3/offer-1-home-3.png'
 
 import services_1_home_3 from './images/home-3/services-1-home-3.png'
 import services_2_home_3 from './images/home-3/services-2-home-3.png'
-
 import digital_product_bg from './images/home-3/digital-product-bg.png'
-
 import best_services_banner from './images/home-3/best-services-banner.png'
-
 import weekly_meet_MP4 from './images/banner/weekly-meet.mp4'
+
+import blog_writer_home_3 from './images/home-3/blog-writer-home-3.png'
 
 export const asset = {
     logo_1,
@@ -129,4 +128,6 @@ export const asset = {
 
     best_services_banner,
     weekly_meet_MP4,
+
+    blog_writer_home_3,
 }
