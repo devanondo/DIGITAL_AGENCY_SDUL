@@ -1,3 +1,4 @@
+import Marquee_Area_Home_3 from '../components/marquee-area-home-3'
 import Offer_Area_Home_3 from '../components/offer-area-home-3'
 import Footer from '../components/shared/footer'
 import StartHeroThree from '../components/start-hero-3'
@@ -7,6 +8,7 @@ const HomeThree = () => {
         <>
             <StartHeroThree />
             <Offer_Area_Home_3 />
+            <Marquee_Area_Home_3 />
             <Footer />
         </>
     )

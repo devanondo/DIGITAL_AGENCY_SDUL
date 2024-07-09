@@ -105,5 +105,5 @@ export const asset = {
     home_3_hero_banner_shep_4,
     offer_1_home_3,
     offer_2_home_3,
-    offer_3_home_3
+    offer_3_home_3,
 }
