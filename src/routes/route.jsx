@@ -5,6 +5,7 @@ import About from '../pages/about'
 import Team from '../pages/team'
 import Faq from '../pages/faq'
 import Price from '../pages/price'
+import NotFound from '../pages/notFound'
 
 const Routes = () => {
     const router = createBrowserRouter([
@@ -31,6 +32,10 @@ const Routes = () => {
         {
             path: '/price',
             element: <Price />,
+        },
+        {
+            path: '/notFound',
+            element: <NotFound />,
         },
     ])
 

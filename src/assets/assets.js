@@ -43,6 +43,7 @@ import bg_blur_shep_3 from './images/shep/bg-blur-shep-3.png'
 import text_shep_2 from './images/shep/text-shep-2.png'
 
 import rating from './images/hero/rating.png'
+import notFound_png from './images/404/404.png'
 
 import home_3_hero_slider from './images/banner/home-3-hero-slider.png'
 import home_3_hero_banner_shep_1 from './images/shep/home-3-hero-banner-shep-1.png'
@@ -152,4 +153,5 @@ export const asset = {
     about_team_4,
 
     faq_banner_home_2,
+    notFound_png,
 }
