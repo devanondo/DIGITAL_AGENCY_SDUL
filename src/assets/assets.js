@@ -114,7 +114,7 @@ import blog_details_post_1 from './images/blog-details/blog-details-post-1.png'
 import blog_details_post_2 from './images/blog-details/blog-details-post-2.png'
 import blog_details_post_3 from './images/blog-details/blog-details-post-3.png'
 import sitebar_banner from './images/sitebar/sitebar-banner.png'
-
+ 
 export const asset = {
     logo_1,
     logo_2,
