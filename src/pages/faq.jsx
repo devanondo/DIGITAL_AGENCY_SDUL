@@ -1,12 +1,12 @@
-import Bread_Crumbe_Faq from '../components/faq/bread-crumbe-faq'
 import Faq_Area_One from '../components/faq/faq-area-1'
 import Faq_Area_Two from '../components/faq/faq-area-2'
+import Breadcrumb from '../components/shared/breadcrumb'
 import Footer from '../components/shared/footer'
 
 const Faq = () => {
     return (
         <>
-            <Bread_Crumbe_Faq />
+            <Breadcrumb pageName="FAQ" />
             <Faq_Area_One />
             <Faq_Area_Two />
             <Footer />
