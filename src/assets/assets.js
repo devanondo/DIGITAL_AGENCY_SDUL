@@ -76,9 +76,6 @@ import about_team_4 from './images/about/about-team-4.png'
 
 import faq_banner_home_2 from './images/home-2/faq-banner-home-2.png'
 
-<<<<<<< HEAD
-import marketing_banner from './images/home-2/marketing-banner.png'
-=======
 import pepole from './images/hero/pepole.png'
 
 import home_2_hero_slider from './images/banner/home-2-hero-slider.png'
@@ -111,7 +108,6 @@ import subscribe_shep_7_home_2 from './images/home-2/subscribe-shep-7-home-2.png
 import blog_1_home_2 from './images/home-2/blog-1-home-2.png'
 import blog_2_home_2 from './images/home-2/blog-2-home-2.png'
 import blog_3_home_2 from './images/home-2/blog-3-home-2.png'
->>>>>>> 37df52be34e75257ee54f5f81edcee09ff0bdde1
 
 export const asset = {
     logo_1,
@@ -195,10 +191,7 @@ export const asset = {
 
     faq_banner_home_2,
     notFound_png,
-<<<<<<< HEAD
     marketing_banner,
-=======
-
     pepole,
     home_2_hero_slider,
     seo_house_1_home_2,
@@ -208,7 +201,6 @@ export const asset = {
     seo_house_director_sing,
 
     home_2_video_banner_1,
-    marketing_banner,
 
     recent_work_1_home_2,
     recent_work_2_home_2,
@@ -231,5 +223,4 @@ export const asset = {
     blog_1_home_2,
     blog_2_home_2,
     blog_3_home_2,
->>>>>>> 37df52be34e75257ee54f5f81edcee09ff0bdde1
 }

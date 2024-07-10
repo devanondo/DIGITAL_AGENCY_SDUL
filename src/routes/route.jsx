@@ -37,19 +37,18 @@ const Routes = () => {
             path: '/price',
             element: <Price />,
         },
-        {
-            path: '/notFound',
-            element: <NotFound />,
-        },
-        {
 
+        {
             path: '/services',
             element: <Services />,
- },
+        },
         {
             path: '/home-2',
             element: <HomeTwo />,
-
+        },
+        {
+            path: '*',
+            element: <NotFound />,
         },
     ])
 
