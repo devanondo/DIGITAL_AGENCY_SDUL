@@ -42,13 +42,14 @@ const Routes = () => {
             element: <NotFound />,
         },
         {
-<<<<<<< HEAD
+
             path: '/services',
             element: <Services />,
-=======
+ },
+        {
             path: '/home-2',
             element: <HomeTwo />,
->>>>>>> 37df52be34e75257ee54f5f81edcee09ff0bdde1
+
         },
     ])
 
