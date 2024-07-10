@@ -13,6 +13,7 @@ import HomeTwo from '../pages/home-2'
 import Services_Details from '../pages/services-details'
 import Blog_Grid from '../pages/blog-grid'
 import Blog_Standart from '../pages/blog-standart'
+import Blog_Details from '../pages/blog-details'
 
 const Routes = () => {
     const router = createBrowserRouter([
@@ -64,6 +65,10 @@ const Routes = () => {
         {
             path: '/blog-standart',
             element: <Blog_Standart />,
+        },
+        {
+            path: '/blog-details',
+            element: <Blog_Details />,
         },
     ])
 

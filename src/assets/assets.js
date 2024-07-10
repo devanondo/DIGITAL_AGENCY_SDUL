@@ -114,6 +114,11 @@ import blog_details_post_1 from './images/blog-details/blog-details-post-1.png'
 import blog_details_post_2 from './images/blog-details/blog-details-post-2.png'
 import blog_details_post_3 from './images/blog-details/blog-details-post-3.png'
 import sitebar_banner from './images/sitebar/sitebar-banner.png'
+import blog_details_writter from './images/blog-details/blog-details-writer.png'
+import blog_details_prev from './images/blog-details/blog-details-prev.png'
+import blog_details_next from './images/blog-details/blog-details-next.png'
+import blog_details_comment_1 from './images/blog-details/blog-details-comment-1.png'
+import blog_details_comment_2 from './images/blog-details/blog-details-comment-2.png'
 
 import post_1 from './images/blog-standart/post-1.png'
 import post_2 from './images/blog-standart/post-2.png'
@@ -242,6 +247,12 @@ export const asset = {
     blog_details_post_2,
     blog_details_post_3,
     sitebar_banner,
+    blog_details_writter,
+    blog_details_prev,
+    blog_details_next,
+    blog_details_comment_1,
+    blog_details_comment_2,
+    
 
     post_1,
     post_2,
