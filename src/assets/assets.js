@@ -127,6 +127,10 @@ import sitebar_comment_1 from './images/sitebar/sitebar-comment-1.png'
 import sitebar_comment_2 from './images/sitebar/sitebar-comment-2.png'
 import sitebar_comment_3 from './images/sitebar/sitebar-comment-3.png'
 
+import item_1 from './images/project-grid/item-1.png'
+import item_2 from './images/project-grid/item-2.png'
+import item_3 from './images/project-grid/item-3.png'
+
 export const asset = {
     logo_1,
     logo_2,
@@ -252,7 +256,6 @@ export const asset = {
     blog_details_next,
     blog_details_comment_1,
     blog_details_comment_2,
-    
 
     post_1,
     post_2,
@@ -260,4 +263,8 @@ export const asset = {
     sitebar_comment_1,
     sitebar_comment_2,
     sitebar_comment_3,
+
+    item_1,
+    item_2,
+    item_3,
 }
