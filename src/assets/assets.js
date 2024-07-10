@@ -1,4 +1,5 @@
 import logo_1 from './images/logo/logo-1.svg'
+import logo_2 from './images/logo/logo-2.svg'
 
 import bg_blur_shep_1 from './images/shep/bg-blur-shep-1.png'
 import bg_blur_shep_2 from './images/shep/bg-blur-shep-2.png'
@@ -39,6 +40,45 @@ import blog_img_4_home_1 from './images/home-1/blog-img-4-home-1.png'
 import footer_chat_bg_shape_home_3 from './images/home-3/footer-chat-bg-shep-home-3.png'
 import footer_bg_home_2 from './images/home-2/footer-bg-home-2.png'
 
+ 
+// home 3
+import bg_blur_shep_3 from './images/shep/bg-blur-shep-3.png'
+import text_shep_2 from './images/shep/text-shep-2.png'
+
+import rating from './images/hero/rating.png'
+import notFound_png from './images/404/404.png'
+
+import home_3_hero_slider from './images/banner/home-3-hero-slider.png'
+import home_3_hero_banner_shep_1 from './images/shep/home-3-hero-banner-shep-1.png'
+import home_3_hero_banner_shep_2 from './images/shep/home-3-hero-banner-shep-2.png'
+import home_3_hero_banner_shep_3 from './images/shep/home-3-hero-banner-shep-3.png'
+import home_3_hero_banner_shep_4 from './images/shep/home-3-hero-banner-shep-4.png'
+
+import offer_1_home_3 from './images/home-3/offer-1-home-3.png'
+import offer_2_home_3 from './images/home-3/offer-1-home-3.png'
+import offer_3_home_3 from './images/home-3/offer-1-home-3.png'
+
+import services_1_home_3 from './images/home-3/services-1-home-3.png'
+import services_2_home_3 from './images/home-3/services-2-home-3.png'
+import digital_product_bg from './images/home-3/digital-product-bg.png'
+import best_services_banner from './images/home-3/best-services-banner.png'
+import weekly_meet_MP4 from './images/banner/weekly-meet.mp4'
+import blog_writer_home_3 from './images/home-3/blog-writer-home-3.png'
+
+import breadcrumb_bg from './images/banner/breadcrumb-bg.png'
+import about from './images/about/about.png'
+import about_avatar from './images/about/about-avatar.png'
+import avatar_text_shep from './images/about/avatar-text-shep.png'
+
+import about_team_1 from './images/about/about-team-1.png'
+import about_team_2 from './images/about/about-team-2.png'
+import about_team_3 from './images/about/about-team-3.png'
+import about_team_4 from './images/about/about-team-4.png'
+
+// faq
+import faq_banner_home_2 from './images/home-2/faq-banner-home-2.png'
+
+ 
 import pepole from './images/hero/pepole.png'
 
 import home_2_hero_slider from './images/banner/home-2-hero-slider.png'
@@ -73,9 +113,10 @@ import blog_1_home_2 from './images/home-2/blog-1-home-2.png'
 import blog_2_home_2 from './images/home-2/blog-2-home-2.png'
 import blog_3_home_2 from './images/home-2/blog-3-home-2.png'
 
+ 
 export const asset = {
     logo_1,
-
+    logo_2,
     bg_blur_shep_1,
     bg_blur_shep_2,
     home_1_hero_slider,
@@ -88,7 +129,9 @@ export const asset = {
     offer_3,
 
     about_home_1,
-
+    about,
+    about_avatar,
+    avatar_text_shep,
     ppc_agency_1,
     ppc_agency_2,
     ppc_agency_3,
@@ -121,6 +164,40 @@ export const asset = {
 
     footer_bg_home_2,
 
+ 
+    bg_blur_shep_3,
+
+    text_shep_2,
+    rating,
+
+    home_3_hero_slider,
+    home_3_hero_banner_shep_1,
+    home_3_hero_banner_shep_2,
+    home_3_hero_banner_shep_3,
+    home_3_hero_banner_shep_4,
+
+    offer_1_home_3,
+    offer_2_home_3,
+    offer_3_home_3,
+
+    services_1_home_3,
+    services_2_home_3,
+
+    digital_product_bg,
+
+    best_services_banner,
+    weekly_meet_MP4,
+    blog_writer_home_3,
+    breadcrumb_bg,
+
+    about_team_1,
+    about_team_2,
+    about_team_3,
+    about_team_4,
+
+    faq_banner_home_2,
+    notFound_png,
+ 
     pepole,
     home_2_hero_slider,
     seo_house_1_home_2,
@@ -154,4 +231,5 @@ export const asset = {
     blog_1_home_2,
     blog_2_home_2,
     blog_3_home_2,
+ 
 }
