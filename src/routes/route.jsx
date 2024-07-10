@@ -12,6 +12,7 @@ import Services from '../pages/services'
 import HomeTwo from '../pages/home-2'
 import Services_Details from '../pages/services-details'
 import Blog_Grid from '../pages/blog-grid'
+import Blog_Standart from '../pages/blog-standart'
 
 const Routes = () => {
     const router = createBrowserRouter([
@@ -59,6 +60,10 @@ const Routes = () => {
         {
             path: '/blog-grid',
             element: <Blog_Grid />,
+        },
+        {
+            path: '/blog-standart',
+            element: <Blog_Standart />,
         },
     ])
 
