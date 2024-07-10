@@ -7,6 +7,7 @@ import Team from '../pages/team'
 import Faq from '../pages/faq'
 import Price from '../pages/price'
 import NotFound from '../pages/notFound'
+import Services from '../pages/services'
 
 import HomeTwo from '../pages/home-2'
 
@@ -41,8 +42,14 @@ const Routes = () => {
             element: <NotFound />,
         },
         {
+
+            path: '/services',
+            element: <Services />,
+ },
+        {
             path: '/home-2',
             element: <HomeTwo />,
+
         },
     ])
 
