@@ -6,12 +6,14 @@ import MarqueeHomeOne from '../components/marquee-home-1'
 import OfferHomeOne from '../components/offer-home-1'
 import PPCAgencyOne from '../components/ppc-agency-one'
 import Footer from '../components/shared/footer'
+import Navbar from '../components/shared/navbar'
 import StartHeroOne from '../components/start-hero-1'
 import TeamAwrads from '../components/team-awards'
 
 const HomeOne = () => {
     return (
         <>
+            <Navbar />
             <StartHeroOne />
             <OfferHomeOne />
             <AboutHomeOne />
