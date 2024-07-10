@@ -10,6 +10,7 @@ import NotFound from '../pages/notFound'
 import Services from '../pages/services'
 
 import HomeTwo from '../pages/home-2'
+import Services_Details from '../pages/services-details'
 
 const Routes = () => {
     const router = createBrowserRouter([
@@ -49,6 +50,10 @@ const Routes = () => {
         {
             path: '*',
             element: <NotFound />,
+        },
+        {
+            path: '/services-details',
+            element: <Services_Details />,
         },
     ])
 

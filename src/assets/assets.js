@@ -109,6 +109,12 @@ import blog_1_home_2 from './images/home-2/blog-1-home-2.png'
 import blog_2_home_2 from './images/home-2/blog-2-home-2.png'
 import blog_3_home_2 from './images/home-2/blog-3-home-2.png'
 
+import blog_details_banner_1 from './images/blog-details/blog-details-banner-1.png'
+import blog_details_post_1 from './images/blog-details/blog-details-post-1.png'
+import blog_details_post_2 from './images/blog-details/blog-details-post-2.png'
+import blog_details_post_3 from './images/blog-details/blog-details-post-3.png'
+import sitebar_banner from './images/sitebar/sitebar-banner.png'
+
 export const asset = {
     logo_1,
     logo_2,
@@ -223,4 +229,10 @@ export const asset = {
     blog_1_home_2,
     blog_2_home_2,
     blog_3_home_2,
+
+    blog_details_banner_1,
+    blog_details_post_1,
+    blog_details_post_2,
+    blog_details_post_3,
+    sitebar_banner,
 }
