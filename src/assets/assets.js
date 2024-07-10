@@ -131,6 +131,10 @@ import item_1 from './images/project-grid/item-1.png'
 import item_2 from './images/project-grid/item-2.png'
 import item_3 from './images/project-grid/item-3.png'
 
+import project_details_1 from './images/project-details/project-details-1.png'
+import project_details_2 from './images/project-details/project-details-2.png'
+import project_details_3 from './images/project-details/project-details-3.png'
+
 export const asset = {
     logo_1,
     logo_2,
@@ -267,4 +271,8 @@ export const asset = {
     item_1,
     item_2,
     item_3,
+
+    project_details_1,
+    project_details_2,
+    project_details_3
 }
