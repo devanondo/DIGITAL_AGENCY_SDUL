@@ -135,6 +135,8 @@ import project_details_1 from './images/project-details/project-details-1.png'
 import project_details_2 from './images/project-details/project-details-2.png'
 import project_details_3 from './images/project-details/project-details-3.png'
 
+import map from './images/contact/map.png'
+
 export const asset = {
     logo_1,
     logo_2,
@@ -274,5 +276,6 @@ export const asset = {
 
     project_details_1,
     project_details_2,
-    project_details_3
+    project_details_3,
+    map,
 }
