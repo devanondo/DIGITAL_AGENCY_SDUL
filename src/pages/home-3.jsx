@@ -9,12 +9,14 @@ import Marquee_Area_Home_3 from '../components/marquee-area-home-3'
 import Offer_Area_Home_3 from '../components/offer-area-home-3'
 import Plan_Area_Home_3 from '../components/plan-area-home-3'
 import Services_Area_Home_2 from '../components/services-area-home-2'
+import Navbar from '../components/shared/navbar'
 import StartHeroThree from '../components/start-hero-3'
 import Weekly_Meet_Home_3 from '../components/weekly-meet-home-3'
 
 const HomeThree = () => {
     return (
         <>
+            <Navbar />
             <StartHeroThree />
             <Offer_Area_Home_3 />
             <Marquee_Area_Home_3 />

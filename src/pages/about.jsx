@@ -6,10 +6,12 @@ import Team_Area_About_Inner from '../components/about/team-area-about-inner'
 import Weekly_Meet from '../components/about/weekly-meet'
 import Footer from '../components/shared/footer'
 import Breadcrumb from '../components/shared/breadcrumb'
+import Navbar from '../components/shared/navbar'
 
 const About = () => {
     return (
         <>
+            <Navbar />
             <Breadcrumb pageName="About Company" />
             <About_Area />
             <Marque_Area_Home_Two />

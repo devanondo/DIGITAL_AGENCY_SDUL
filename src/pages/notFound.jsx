@@ -1,10 +1,12 @@
 import { asset } from '../assets/assets'
 import Breadcrumb from '../components/shared/breadcrumb'
 import Footer from '../components/shared/footer'
+import Navbar from '../components/shared/navbar'
 
 const NotFound = () => {
     return (
         <>
+            <Navbar />
             <Breadcrumb pageName="404" />
             <section className="error-area">
                 <img

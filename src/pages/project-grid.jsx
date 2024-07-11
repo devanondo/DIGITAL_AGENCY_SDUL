@@ -1,10 +1,12 @@
 import { asset } from '../assets/assets'
 import Breadcrumb from '../components/shared/breadcrumb'
 import Footer from '../components/shared/footer'
+import Navbar from '../components/shared/navbar'
 
 const Project_Grid = () => {
     return (
         <>
+            <Navbar />
             <Breadcrumb pageName="Project Grid" />
             <section className="offer-area-home-3 project-grid-area">
                 <img

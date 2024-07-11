@@ -1,10 +1,12 @@
 import { asset } from '../assets/assets'
 import Breadcrumb from '../components/shared/breadcrumb'
 import Footer from '../components/shared/footer'
+import Navbar from '../components/shared/navbar'
 
 const Services_Details = () => {
     return (
         <div>
+            <Navbar />
             <Breadcrumb pageName="Services Details" />
             {/* blog details start here */}
             <section className="blog-details-area">

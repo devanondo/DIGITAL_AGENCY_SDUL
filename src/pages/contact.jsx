@@ -1,10 +1,12 @@
 import { asset } from '../assets/assets'
 import Breadcrumb from '../components/shared/breadcrumb'
 import Footer from '../components/shared/footer'
+import Navbar from '../components/shared/navbar'
 
 const Contact = () => {
     return (
         <>
+            <Navbar />
             <Breadcrumb pageName="Contact" />
             {/* contact area start */}
             <section className="contact-area-home-3 contact-area">
