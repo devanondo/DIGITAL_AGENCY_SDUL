@@ -109,6 +109,34 @@ import blog_1_home_2 from './images/home-2/blog-1-home-2.png'
 import blog_2_home_2 from './images/home-2/blog-2-home-2.png'
 import blog_3_home_2 from './images/home-2/blog-3-home-2.png'
 
+import blog_details_banner_1 from './images/blog-details/blog-details-banner-1.png'
+import blog_details_post_1 from './images/blog-details/blog-details-post-1.png'
+import blog_details_post_2 from './images/blog-details/blog-details-post-2.png'
+import blog_details_post_3 from './images/blog-details/blog-details-post-3.png'
+import sitebar_banner from './images/sitebar/sitebar-banner.png'
+import blog_details_writter from './images/blog-details/blog-details-writer.png'
+import blog_details_prev from './images/blog-details/blog-details-prev.png'
+import blog_details_next from './images/blog-details/blog-details-next.png'
+import blog_details_comment_1 from './images/blog-details/blog-details-comment-1.png'
+import blog_details_comment_2 from './images/blog-details/blog-details-comment-2.png'
+
+import post_1 from './images/blog-standart/post-1.png'
+import post_2 from './images/blog-standart/post-2.png'
+import post_3 from './images/blog-standart/post-3.png'
+import sitebar_comment_1 from './images/sitebar/sitebar-comment-1.png'
+import sitebar_comment_2 from './images/sitebar/sitebar-comment-2.png'
+import sitebar_comment_3 from './images/sitebar/sitebar-comment-3.png'
+
+import item_1 from './images/project-grid/item-1.png'
+import item_2 from './images/project-grid/item-2.png'
+import item_3 from './images/project-grid/item-3.png'
+
+import project_details_1 from './images/project-details/project-details-1.png'
+import project_details_2 from './images/project-details/project-details-2.png'
+import project_details_3 from './images/project-details/project-details-3.png'
+
+import map from './images/contact/map.png'
+
 export const asset = {
     logo_1,
     logo_2,
@@ -223,4 +251,31 @@ export const asset = {
     blog_1_home_2,
     blog_2_home_2,
     blog_3_home_2,
+
+    blog_details_banner_1,
+    blog_details_post_1,
+    blog_details_post_2,
+    blog_details_post_3,
+    sitebar_banner,
+    blog_details_writter,
+    blog_details_prev,
+    blog_details_next,
+    blog_details_comment_1,
+    blog_details_comment_2,
+
+    post_1,
+    post_2,
+    post_3,
+    sitebar_comment_1,
+    sitebar_comment_2,
+    sitebar_comment_3,
+
+    item_1,
+    item_2,
+    item_3,
+
+    project_details_1,
+    project_details_2,
+    project_details_3,
+    map,
 }

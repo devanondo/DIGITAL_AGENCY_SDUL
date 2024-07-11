@@ -10,6 +10,13 @@ import NotFound from '../pages/notFound'
 import Services from '../pages/services'
 
 import HomeTwo from '../pages/home-2'
+import Services_Details from '../pages/services-details'
+import Blog_Grid from '../pages/blog-grid'
+import Blog_Standart from '../pages/blog-standart'
+import Blog_Details from '../pages/blog-details'
+import Project_Grid from '../pages/project-grid'
+import Project_Details from '../pages/project-details'
+import Contact from '../pages/contact'
 
 const Routes = () => {
     const router = createBrowserRouter([
@@ -49,6 +56,34 @@ const Routes = () => {
         {
             path: '*',
             element: <NotFound />,
+        },
+        {
+            path: '/services-details',
+            element: <Services_Details />,
+        },
+        {
+            path: '/blog-grid',
+            element: <Blog_Grid />,
+        },
+        {
+            path: '/blog-standart',
+            element: <Blog_Standart />,
+        },
+        {
+            path: '/blog-details',
+            element: <Blog_Details />,
+        },
+        {
+            path: '/project-grid',
+            element: <Project_Grid />,
+        },
+        {
+            path: '/project-details',
+            element: <Project_Details />,
+        },
+        {
+            path: '/contact',
+            element: <Contact />,
         },
     ])
 
