@@ -137,6 +137,8 @@ import project_details_3 from './images/project-details/project-details-3.png'
 
 import map from './images/contact/map.png'
 
+import footer_img_1_home_2 from './images/home-2/footer-img-1-home-2.png'
+
 export const asset = {
     logo_1,
     logo_2,
@@ -227,6 +229,7 @@ export const asset = {
     seo_house_icon_2_home_2,
     seo_house_director_img,
     seo_house_director_sing,
+    footer_img_1_home_2,
 
     home_2_video_banner_1,
 

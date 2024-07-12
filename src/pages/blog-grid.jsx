@@ -1,10 +1,12 @@
 import { asset } from '../assets/assets'
 import Breadcrumb from '../components/shared/breadcrumb'
 import Footer from '../components/shared/footer'
+import Navbar from '../components/shared/navbar'
 
 const Blog_Grid = () => {
     return (
         <>
+            <Navbar />
             <Breadcrumb pageName="Blog Grid" />
             {/* <!-- Start Blog Grid --> */}
             <section className="blog-area-home-3 blog-area">

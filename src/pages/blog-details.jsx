@@ -1,10 +1,12 @@
 import { asset } from '../assets/assets'
 import Breadcrumb from '../components/shared/breadcrumb'
 import Footer from '../components/shared/footer'
+import Navbar from '../components/shared/navbar'
 
 const Blog_Details = () => {
     return (
         <div>
+            <Navbar />
             <Breadcrumb pageName="Blog Details" />
             {/* blog details start */}
             <section className="blog-details-area">
@@ -105,7 +107,7 @@ const Blog_Details = () => {
                                         >
                                             <mask
                                                 id="mask0_1_12456"
-                                                style={{maskType:'alpha'}}
+                                                style={{ maskType: 'alpha' }}
                                                 maskUnits="userSpaceOnUse"
                                                 x="0"
                                                 y="0"
@@ -801,7 +803,10 @@ const Blog_Details = () => {
                                                     >
                                                         <mask
                                                             id="mask0_1_12735453"
-                                                            style={{maskType:'alpha'}}
+                                                            style={{
+                                                                maskType:
+                                                                    'alpha',
+                                                            }}
                                                             maskUnits="userSpaceOnUse"
                                                             x="0"
                                                             y="0"
@@ -869,7 +874,10 @@ const Blog_Details = () => {
                                                     >
                                                         <mask
                                                             id="mask0_1_1273578678686786"
-                                                            style={{maskType:'alpha'}}
+                                                            style={{
+                                                                maskType:
+                                                                    'alpha',
+                                                            }}
                                                             maskUnits="userSpaceOnUse"
                                                             x="0"
                                                             y="0"
@@ -937,7 +945,10 @@ const Blog_Details = () => {
                                                     >
                                                         <mask
                                                             id="mask0_1_127353254354667989090"
-                                                            style={{maskType:'alpha'}}
+                                                            style={{
+                                                                maskType:
+                                                                    'alpha',
+                                                            }}
                                                             maskUnits="userSpaceOnUse"
                                                             x="0"
                                                             y="0"

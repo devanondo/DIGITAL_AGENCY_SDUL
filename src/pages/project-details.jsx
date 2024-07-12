@@ -1,10 +1,12 @@
 import { asset } from '../assets/assets'
 import Breadcrumb from '../components/shared/breadcrumb'
 import Footer from '../components/shared/footer'
+import Navbar from '../components/shared/navbar'
 
 const Project_Details = () => {
     return (
         <>
+            <Navbar />
             <Breadcrumb pageName="Project Details" />
             <section className="project-details-area">
                 <img

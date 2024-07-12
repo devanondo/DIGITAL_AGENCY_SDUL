@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom'
 import { asset } from '../../assets/assets'
 
 const Footer = () => {
@@ -11,9 +12,9 @@ const Footer = () => {
                     <div className="row justify-content-between">
                         <div className="col-xl-4 col-lg-4 col-md-7 col-sm-12">
                             <div className="footer-item-1">
-                                <a href="index.html">
+                                <Link to="index.html">
                                     <img src={asset.logo_1} alt="VRE" />
-                                </a>
+                                </Link>
                                 <p className="font-size-1-16">
                                     The world’s first and largest digital market{' '}
                                     <br /> for crypto collectibles and
@@ -90,19 +91,19 @@ const Footer = () => {
                                 <h6 className="font-size-1-22">Services Req</h6>
                                 <ul>
                                     <li>
-                                        <a href="#">Property on sale</a>
+                                        <Link to="#">Property on sale</Link>
                                     </li>
                                     <li>
-                                        <a href="#">About Real estate</a>
+                                        <Link to="#">About Real estate</Link>
                                     </li>
                                     <li>
-                                        <a href="#">Team membar</a>
+                                        <Link to="#">Team membar</Link>
                                     </li>
                                     <li>
-                                        <a href="#">Terms of use</a>
+                                        <Link to="#">Terms of use</Link>
                                     </li>
                                     <li>
-                                        <a href="#">Privacy Policy</a>
+                                        <Link to="#">Privacy Policy</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -112,19 +113,19 @@ const Footer = () => {
                                 <h6 className="font-size-1-22">Contact Info</h6>
                                 <ul>
                                     <li>
-                                        <a href="#">Services Details</a>
+                                        <Link to="#">Services Details</Link>
                                     </li>
                                     <li>
-                                        <a href="#">Contact</a>
+                                        <Link to="#">Contact</Link>
                                     </li>
                                     <li>
-                                        <a href="#">Services Details</a>
+                                        <Link to="#">Services Details</Link>
                                     </li>
                                     <li>
-                                        <a href="#">Contact</a>
+                                        <Link to="#">Contact</Link>
                                     </li>
                                     <li>
-                                        <a href="#">Home Buying</a>
+                                        <Link to="#">Home Buying</Link>
                                     </li>
                                 </ul>
                             </div>
@@ -165,24 +166,24 @@ const Footer = () => {
                                     </div>
                                     <ul>
                                         <li>
-                                            <a href="#">
+                                            <Link to="#">
                                                 <i className="fa-brands fa-facebook-f"></i>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <Link to="#">
                                                 <i className="fa-brands fa-twitter"></i>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <Link to="#">
                                                 <i className="fa-brands fa-instagram"></i>
-                                            </a>
+                                            </Link>
                                         </li>
                                         <li>
-                                            <a href="#">
+                                            <Link to="#">
                                                 <i className="fa-brands fa-pinterest"></i>
-                                            </a>
+                                            </Link>
                                         </li>
                                     </ul>
                                 </div>
@@ -235,7 +236,7 @@ const Footer = () => {
                             </svg>
                         </div>
                         <span className="font-size-1-20">
-                            Contact us at <a href="#">@website_stock.com</a>
+                            Contact us at <Link to="#">@website_stock.com</Link>
                         </span>
                     </div>
                     <div className="footer-messege">
@@ -280,35 +281,35 @@ const Footer = () => {
                     <div className="footer-copyright-social-icon">
                         <ul>
                             <li>
-                                <a href="#">
+                                <Link to="#">
                                     <i className="fa-brands fa-facebook-f"></i>
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#">
+                                <Link to="#">
                                     <i className="fa-brands fa-twitter"></i>
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#">
+                                <Link to="#">
                                     <i className="fa-brands fa-vimeo-v"></i>
-                                </a>
+                                </Link>
                             </li>
                             <li>
-                                <a href="#">
+                                <Link to="#">
                                     <i className="fa-brands fa-pinterest"></i>
-                                </a>
+                                </Link>
                             </li>
                         </ul>
                     </div>
                     <div className="footer-privecy-policy">
-                        <a href="#" className="font-size-1-18">
+                        <Link to="#" className="font-size-1-18">
                             Terms of Use
-                        </a>
+                        </Link>
                         <span className="font-size-1-18">|</span>
-                        <a href="#" className="font-size-1-18">
+                        <Link to="#" className="font-size-1-18">
                             Privacy Policy
-                        </a>
+                        </Link>
                     </div>
                 </div>
             </div>
