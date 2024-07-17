@@ -1,4 +1,6 @@
 import { asset } from '../assets/assets'
+import SectionSlideUp from './shared/gsap/slide-up'
+import AnimateTitle from './shared/gsap/split-collab'
 
 const AboutHomeOne = () => {
     return (
@@ -14,10 +16,16 @@ const AboutHomeOne = () => {
                         <div className="col-xl-7 col-lg-7">
                             <div className="about-area-home-1-inner">
                                 <p className="font-size-1-24">about us</p>
-                                <h3 className="font-size-1-40 split-collab">
+                                {/* <h3 className="font-size-1-40 split-collab">
                                     The Digital Marketing <br /> Services
                                     Company
-                                </h3>
+                                </h3> */}
+
+                                <AnimateTitle className="font-size-1-40">
+                                    The Digital Marketing <br /> Services
+                                    Company
+                                </AnimateTitle>
+
                                 <p className="about-us-details font-size-1-18">
                                     Lorem Ipsum is simply dummy text of the
                                     printing and typesetting industry ftyuu
@@ -26,7 +34,7 @@ const AboutHomeOne = () => {
                                     centuries, but also the leap into electronic
                                     typesetting.
                                 </p>
-                                <div className="about-point-text vre-slide-up-gsap">
+                                <SectionSlideUp className="about-point-text vre-slide-up-gsap">
                                     <div className="about-point-icon">
                                         <span>
                                             <svg
@@ -98,8 +106,8 @@ const AboutHomeOne = () => {
                                             industry.
                                         </p>
                                     </div>
-                                </div>
-                                <div className="about-point-text vre-slide-up-gsap">
+                                </SectionSlideUp>
+                                <SectionSlideUp className="about-point-text vre-slide-up-gsap">
                                     <div className="about-point-icon">
                                         <span>
                                             <svg
@@ -150,7 +158,7 @@ const AboutHomeOne = () => {
                                             consemleint lorem.
                                         </p>
                                     </div>
-                                </div>
+                                </SectionSlideUp>
                             </div>
                         </div>
                     </div>

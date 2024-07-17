@@ -1,4 +1,6 @@
 import { asset } from '../assets/assets'
+import RevelImageTextAnimation from './shared/gsap/reveal-image-text'
+import AnimateTitle from './shared/gsap/split-collab'
 
 const BlogAreaHomeOne = () => {
     return (
@@ -20,7 +22,9 @@ const BlogAreaHomeOne = () => {
                     </div>
                     <div className="main-title">
                         <h3 className="split-collab">
-                            Empowering Brands With <br /> Digital Brilliance
+                            <AnimateTitle>
+                                Empowering Brands With <br /> Digital Brilliance
+                            </AnimateTitle>
                             <span>
                                 <img src={asset.text_shep_1} alt="" />
                             </span>
@@ -30,12 +34,10 @@ const BlogAreaHomeOne = () => {
                 <div className="blog-wrapper">
                     <div className="row">
                         <div className="col-xl-6 col-lg-6">
-                            <div className="blog-inner blog-inner-1 vre-reveal-one">
-                                <img
-                                    src={asset.blog_img_1_home_1}
-                                    alt="VRE"
-                                    className="vre-reveal-image-one"
-                                />
+                            <RevelImageTextAnimation
+                                image={asset.blog_img_1_home_1}
+                                className="blog-inner blog-inner-1 vre-reveal-one"
+                            >
                                 <div className="blog-info">
                                     <div className="blog-meta">
                                         <div className="blog-category">
@@ -113,15 +115,13 @@ const BlogAreaHomeOne = () => {
                                         </a>
                                     </div>
                                 </div>
-                            </div>
+                            </RevelImageTextAnimation>
                         </div>
                         <div className="col-xl-6 col-lg-6">
-                            <div className="blog-inner blog-inner-2 vre-reveal-one">
-                                <img
-                                    src={asset.blog_img_2_home_1}
-                                    alt="VRE"
-                                    className="vre-reveal-image-one"
-                                />
+                            <RevelImageTextAnimation
+                                image={asset.blog_img_2_home_1}
+                                className="blog-inner blog-inner-2 vre-reveal-one"
+                            >
                                 <div className="blog-info">
                                     <div className="blog-meta">
                                         <div className="blog-category">
@@ -199,13 +199,11 @@ const BlogAreaHomeOne = () => {
                                         </a>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="blog-inner blog-inner-3 vre-reveal-one">
-                                <img
-                                    src={asset.blog_img_3_home_1}
-                                    alt="VRE"
-                                    className="vre-reveal-image-one"
-                                />
+                            </RevelImageTextAnimation>
+                            <RevelImageTextAnimation
+                                image={asset.blog_img_3_home_1}
+                                className="blog-inner blog-inner-3 vre-reveal-one"
+                            >
                                 <div className="blog-info">
                                     <div className="blog-meta">
                                         <div className="blog-category">
@@ -283,13 +281,11 @@ const BlogAreaHomeOne = () => {
                                         </a>
                                     </div>
                                 </div>
-                            </div>
-                            <div className="blog-inner blog-inner-4 vre-reveal-one">
-                                <img
-                                    src={asset.blog_img_4_home_1}
-                                    alt="VRE"
-                                    className="vre-reveal-image-one"
-                                />
+                            </RevelImageTextAnimation>
+                            <RevelImageTextAnimation
+                                image={asset.blog_img_4_home_1}
+                                className="blog-inner blog-inner-4 vre-reveal-one"
+                            >
                                 <div className="blog-info">
                                     <div className="blog-meta">
                                         <div className="blog-category">
@@ -367,7 +363,7 @@ const BlogAreaHomeOne = () => {
                                         </a>
                                     </div>
                                 </div>
-                            </div>
+                            </RevelImageTextAnimation>
                         </div>
                     </div>
                 </div>
