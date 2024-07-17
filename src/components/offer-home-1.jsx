@@ -1,5 +1,7 @@
 import { asset } from '../assets/assets'
 import parse from 'html-react-parser'
+import AnimateTitle from './shared/gsap/split-collab'
+import SectionSlideUp from './shared/gsap/slide-up'
 
 const OfferHomeOne = () => {
     const cards = [
@@ -35,8 +37,10 @@ const OfferHomeOne = () => {
                         </div>
                         <div className="main-title">
                             <h3 className="split-collab">
-                                We Offer A Wide Range Of <br /> Digital
-                                Marketing
+                                <AnimateTitle>
+                                    We Offer A Wide Range Of <br /> Digital
+                                    Marketing
+                                </AnimateTitle>
                                 <span>
                                     <img src={asset.text_shep_1} alt="shape" />
                                 </span>
@@ -46,7 +50,7 @@ const OfferHomeOne = () => {
                     <div className="offer-wrapper">
                         <div className="row justify-content-center">
                             {cards?.map((card) => (
-                                <div
+                                <SectionSlideUp
                                     key={card.title}
                                     className="col-xl-4 col-lg-4 col-md-6 vre-slide-up-gsap"
                                 >
@@ -64,7 +68,7 @@ const OfferHomeOne = () => {
                                             </a>
                                         </div>
                                     </div>
-                                </div>
+                                </SectionSlideUp>
                             ))}
                         </div>
                     </div>
