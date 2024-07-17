@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom'
 import { asset } from '../assets/assets'
+import AnimateTitle from './shared/gsap/split-collab'
 
 const TeamAwrads = () => {
     const cards = [
@@ -39,8 +40,10 @@ const TeamAwrads = () => {
                     </div>
                     <div className="main-title">
                         <h3 className="split-collab">
-                            We build and activate brands <br />
-                            through cultural insight{' '}
+                            <AnimateTitle>
+                                We build and activate brands <br />
+                                through cultural insight
+                            </AnimateTitle>
                             <span>
                                 <img src={asset.text_shep_1} alt="" />
                             </span>

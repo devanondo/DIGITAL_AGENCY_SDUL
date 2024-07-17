@@ -1,6 +1,7 @@
 import { Link } from 'react-router-dom'
 import { asset } from '../assets/assets'
 import parse from 'html-react-parser'
+import AnimateTitle from './shared/gsap/split-collab'
 
 const DigitalMarketingHomeOne = () => {
     const cards = [
@@ -51,8 +52,10 @@ const DigitalMarketingHomeOne = () => {
                     </div>
                     <div className="main-title">
                         <h3 className="split-collab">
-                            We offer a wide range of <br />
-                            digital marketing{' '}
+                            <AnimateTitle>
+                                We offer a wide range of <br />
+                                digital marketing
+                            </AnimateTitle>
                             <span>
                                 <img src={asset.text_shep_1} alt="" />
                             </span>

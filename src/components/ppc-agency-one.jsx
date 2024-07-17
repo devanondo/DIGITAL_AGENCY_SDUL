@@ -1,4 +1,6 @@
 import { asset } from '../assets/assets'
+import RevelImageTextAnimation from './shared/gsap/reveal-image-text'
+import AnimateTitle from './shared/gsap/split-collab'
 
 const PPCAgencyOne = () => {
     return (
@@ -21,8 +23,10 @@ const PPCAgencyOne = () => {
                                 <div className="title">
                                     <div className="main-title">
                                         <h3 className="split-collab">
-                                            Best PPC Agency in <br />
-                                            Europe: Winner{' '}
+                                            <AnimateTitle>
+                                                Best PPC Agency in <br />
+                                                Europe: Winner
+                                            </AnimateTitle>
                                             <span>
                                                 <img
                                                     src={asset.text_shep_1}
@@ -77,50 +81,42 @@ const PPCAgencyOne = () => {
                         </div>
                         <div className="col-xl-3 offset-xl-1 col-lg-3 col-md-6 col-sm-6">
                             <div className="ppc-agencey-item-1 ppc-agencey-item">
-                                <div className="ppc-agencey-img ppc-agencey-img-1 vre-reveal-one">
-                                    <img
-                                        src={asset.ppc_agency_1}
-                                        alt="VRE"
-                                        className="vre-reveal-image-one"
-                                    />
+                                <RevelImageTextAnimation
+                                    image={asset.ppc_agency_1}
+                                    className="ppc-agencey-img ppc-agencey-img-1"
+                                >
                                     <h5 className="font-size-1-30">
                                         SEO Strategy
                                     </h5>
-                                </div>
-                                <div className="ppc-agencey-img ppc-agencey-img-2 vre-reveal-one">
-                                    <img
-                                        src={asset.ppc_agency_2}
-                                        alt="VRE"
-                                        className="vre-reveal-image-one"
-                                    />
+                                </RevelImageTextAnimation>
+                                <RevelImageTextAnimation
+                                    image={asset.ppc_agency_2}
+                                    className="ppc-agencey-img ppc-agencey-img-2 vre-reveal-one"
+                                >
                                     <h5 className="font-size-1-30">
                                         Optimization
                                     </h5>
-                                </div>
+                                </RevelImageTextAnimation>
                             </div>
                         </div>
                         <div className="col-xl-3 col-lg-3 col-md-6 col-sm-6">
                             <div className="ppc-agencey-item-2 ppc-agencey-item">
-                                <div className="ppc-agencey-img ppc-agencey-img-3 vre-reveal-one">
-                                    <img
-                                        src={asset.ppc_agency_3}
-                                        alt="VRE"
-                                        className="vre-reveal-image-one"
-                                    />
+                                <RevelImageTextAnimation
+                                    image={asset.ppc_agency_3}
+                                    className="ppc-agencey-img ppc-agencey-img-3 vre-reveal-one"
+                                >
                                     <h5 className="font-size-1-30">
                                         SEO Analysis
                                     </h5>
-                                </div>
-                                <div className="ppc-agencey-img ppc-agencey-img-4 vre-reveal-one">
-                                    <img
-                                        src={asset.ppc_agency_4}
-                                        alt="VRE"
-                                        className="vre-reveal-image-one"
-                                    />
+                                </RevelImageTextAnimation>
+                                <RevelImageTextAnimation
+                                    image={asset.ppc_agency_4}
+                                    className="ppc-agencey-img ppc-agencey-img-4 vre-reveal-one"
+                                >
                                     <h5 className="font-size-1-30">
                                         Web & Mobile
                                     </h5>
-                                </div>
+                                </RevelImageTextAnimation>
                             </div>
                         </div>
                     </div>
