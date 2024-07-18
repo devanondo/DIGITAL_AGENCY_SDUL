@@ -1,10 +1,11 @@
 import React from 'react'
+import SectionSlideUp from './shared/gsap/slide-up'
 
 const BrandLogo = () => {
     return (
         <div className="brand-logo-area-home-2">
             <div className="container">
-                <div className="brand-logo-wrapper">
+                <SectionSlideUp className="brand-logo-wrapper">
                     <div className="brand-logo-inner vre-slide-up-gsap">
                         <a href="#">
                             <svg
@@ -433,7 +434,7 @@ const BrandLogo = () => {
                             </svg>
                         </a>
                     </div>
-                </div>
+                </SectionSlideUp>
             </div>
         </div>
     )

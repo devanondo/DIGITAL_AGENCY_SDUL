@@ -1,5 +1,6 @@
 import React from 'react'
 import { asset } from '../assets/assets'
+import AnimateTitle from './shared/gsap/split-collab'
 
 const SubscribeHome2 = () => {
     return (
@@ -47,9 +48,9 @@ const SubscribeHome2 = () => {
             <div className="container">
                 <div className="title">
                     <div className="main-title">
-                        <h3 className="split-collab">
+                        <AnimateTitle className="split-collab">
                             Subscribe To Stay Connected
-                        </h3>
+                        </AnimateTitle>
                     </div>
                 </div>
                 <div className="subscribe-wrapper">

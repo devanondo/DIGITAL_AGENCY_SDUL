@@ -1,5 +1,7 @@
 import React from 'react'
 import { asset } from '../assets/assets'
+import AnimateTitle from './shared/gsap/split-collab'
+import RevelImageAnimation from './shared/gsap/reveal-image'
 
 const BlogHome2 = () => {
     return (
@@ -8,13 +10,13 @@ const BlogHome2 = () => {
                 <div className="title-tab-flexing">
                     <div className="title">
                         <div className="main-title">
-                            <h3 className="split-collab">
+                            <AnimateTitle className="split-collab">
                                 Read More Articles <br />
                                 From Our Blog{' '}
-                                <span>
+                                <span className="absolute">
                                     <img src={asset.text_shep_3} alt="VRE" />
                                 </span>
-                            </h3>
+                            </AnimateTitle>
                         </div>
                     </div>
                     <nav>
@@ -60,13 +62,10 @@ const BlogHome2 = () => {
                             <div className="row">
                                 <div className="col-xl-6 col-lg-6 col-md-12">
                                     <div className="blog-inner-left">
-                                        <div className="blog-left-thumb vre-reveal-one">
-                                            <img
-                                                src={asset.blog_1_home_2}
-                                                alt="VRE"
-                                                className="vre-reveal-image-one"
-                                            />
-                                        </div>
+                                        <RevelImageAnimation
+                                            image={asset.blog_1_home_2}
+                                            className="blog-left-thumb vre-reveal-one"
+                                        />
                                         <div className="blog-info-left">
                                             <span className="font-size-1-16">
                                                 AUGUST 17, 2024
@@ -82,13 +81,10 @@ const BlogHome2 = () => {
                                 </div>
                                 <div className="col-xl-3 col-lg-3 col-md-6">
                                     <div className="blog-right-inner">
-                                        <div className="blog-right-thumb vre-reveal-one">
-                                            <img
-                                                src={asset.blog_2_home_2}
-                                                alt="VRE"
-                                                className="vre-reveal-image-one"
-                                            />
-                                        </div>
+                                        <RevelImageAnimation
+                                            image={asset.blog_2_home_2}
+                                            className="blog-left-thumb vre-reveal-one"
+                                        />
                                         <div className="blog-right-info">
                                             <span className="font-size-1-16">
                                                 AUGUST 17, 2024
@@ -125,13 +121,10 @@ const BlogHome2 = () => {
                                 </div>
                                 <div className="col-xl-3 col-lg-3 col-md-6">
                                     <div className="blog-right-inner">
-                                        <div className="blog-right-thumb vre-reveal-one">
-                                            <img
-                                                src={asset.blog_3_home_2}
-                                                alt="VRE"
-                                                className="vre-reveal-image-one"
-                                            />
-                                        </div>
+                                        <RevelImageAnimation
+                                            image={asset.blog_3_home_2}
+                                            className="blog-right-thumb vre-reveal-one"
+                                        />
                                         <div className="blog-right-info">
                                             <span className="font-size-1-16">
                                                 AUGUST 17, 2024

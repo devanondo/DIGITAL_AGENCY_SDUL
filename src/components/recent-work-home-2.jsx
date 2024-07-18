@@ -1,5 +1,7 @@
 import React from 'react'
 import { asset } from '../assets/assets'
+import AnimateTitle from './shared/gsap/split-collab'
+import RevelImageAnimation from './shared/gsap/reveal-image'
 
 const RecentWorkHomeTwo = () => {
     return (
@@ -15,25 +17,22 @@ const RecentWorkHomeTwo = () => {
                         <p>LATEST PROJECTS</p>
                     </div>
                     <div className="main-title">
-                        <h3 className="split-collab">
+                        <AnimateTitle className="split-collab">
                             Let's Checkout Our Recently <br /> Completed Work{' '}
-                            <span>
+                            <span className="absolute">
                                 <img src={asset.text_shep_3} alt="VRE" />
                             </span>
-                        </h3>
+                        </AnimateTitle>
                     </div>
                 </div>
                 <div className="recent-work-wrapper">
                     <div className="row justify-content-between">
                         <div className="col-xl-6 col-lg-6">
                             <div className="recent-work-inner">
-                                <div className="recent-work-img vre-reveal-one">
-                                    <img
-                                        src={asset.recent_work_1_home_2}
-                                        alt="VRE"
-                                        className="vre-reveal-image-one"
-                                    />
-                                </div>
+                                <RevelImageAnimation
+                                    image={asset.recent_work_1_home_2}
+                                    className="recent-work-img vre-reveal-one"
+                                />
                                 <div className="recent-work-thumb vre-slide-down-gsap">
                                     <div className="recent-work-text">
                                         <h5 className="font-size-1-24">
@@ -71,13 +70,11 @@ const RecentWorkHomeTwo = () => {
                         </div>
                         <div className="col-xl-6 col-lg-6 mt-55">
                             <div className="recent-work-inner">
-                                <div className="recent-work-img vre-reveal-one">
-                                    <img
-                                        src={asset.recent_work_2_home_2}
-                                        alt="VRE"
-                                        className="vre-reveal-image-one"
-                                    />
-                                </div>
+                                <RevelImageAnimation
+                                    image={asset.recent_work_2_home_2}
+                                    className="recent-work-img vre-reveal-one"
+                                />
+
                                 <div className="recent-work-thumb vre-slide-down-gsap">
                                     <div className="recent-work-text">
                                         <h5 className="font-size-1-24">
@@ -115,13 +112,11 @@ const RecentWorkHomeTwo = () => {
                         </div>
                         <div className="col-xl-6 col-lg-6 mt-55">
                             <div className="recent-work-inner recent-work-item-3">
-                                <div className="recent-work-img vre-reveal-one">
-                                    <img
-                                        src={asset.recent_work_3_home_2}
-                                        alt="VRE"
-                                        className="vre-reveal-image-one"
-                                    />
-                                </div>
+                                <RevelImageAnimation
+                                    image={asset.recent_work_3_home_2}
+                                    className="recent-work-img vre-reveal-one"
+                                />
+
                                 <div className="recent-work-thumb vre-slide-down-gsap">
                                     <div className="recent-work-text">
                                         <h5 className="font-size-1-24">
@@ -159,13 +154,11 @@ const RecentWorkHomeTwo = () => {
                         </div>
                         <div className="col-xl-6 col-lg-6 mt-110">
                             <div className="recent-work-inner">
-                                <div className="recent-work-img vre-reveal-one">
-                                    <img
-                                        src={asset.recent_work_4_home_2}
-                                        alt="VRE"
-                                        className="vre-reveal-image-one"
-                                    />
-                                </div>
+                                <RevelImageAnimation
+                                    image={asset.recent_work_4_home_2}
+                                    className="recent-work-img vre-reveal-one"
+                                />
+
                                 <div className="recent-work-thumb vre-slide-down-gsap">
                                     <div className="recent-work-text">
                                         <h5 className="font-size-1-24">

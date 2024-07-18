@@ -6,6 +6,7 @@ import 'swiper/css'
 import 'swiper/css/navigation'
 import 'swiper/css/pagination'
 import 'swiper/css/scrollbar'
+import AnimateTitle from './shared/gsap/split-collab'
 
 const TeamHome2 = () => {
     return (
@@ -27,12 +28,12 @@ const TeamHome2 = () => {
                             <p>OUR TEAM MEMBER</p>
                         </div>
                         <div className="main-title">
-                            <h3 className="split-collab">
+                            <AnimateTitle className="split-collab">
                                 Meet Our Best Seo Teams{' '}
-                                <span>
+                                <span className="absolute">
                                     <img src={asset.text_shep_3} alt="" />
                                 </span>
-                            </h3>
+                            </AnimateTitle>
                         </div>
                     </div>
                     <SwiperNav />
