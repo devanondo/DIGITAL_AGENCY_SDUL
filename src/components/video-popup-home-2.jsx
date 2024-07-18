@@ -1,15 +1,14 @@
 import React from 'react'
 import { asset } from '../assets/assets'
+import RevelImageTextAnimation from './shared/gsap/reveal-image-text'
 
 const VideoPopupHomeTwo = () => {
     return (
         <section className="video-popup-home-2">
-            <div className="video-popup-wrapper vre-reveal-one">
-                <img
-                    src={asset.home_2_video_banner_1}
-                    alt="VRE"
-                    className="vre-reveal-image-one"
-                />
+            <RevelImageTextAnimation
+                image={asset.home_2_video_banner_1}
+                className="video-popup-wrapper vre-reveal-one"
+            >
                 <div className="video-button vre-slide-down-gsap">
                     <a
                         href="https://www.youtube.com/watch?v=XbZDL435xw0&t=97s"
@@ -40,7 +39,7 @@ const VideoPopupHomeTwo = () => {
                         <br /> your Business
                     </h5>
                 </div>
-            </div>
+            </RevelImageTextAnimation>
         </section>
     )
 }

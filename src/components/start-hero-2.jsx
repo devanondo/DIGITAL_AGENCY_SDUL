@@ -1,5 +1,8 @@
 import React from 'react'
 import { asset } from '../assets/assets'
+import AnimateTitle from './shared/gsap/split-collab'
+import SectionSlideUp from './shared/gsap/slide-up'
+import SectionSlideDown from './shared/gsap/slide-down'
 
 const StartHeroTwo = () => {
     return (
@@ -21,17 +24,19 @@ const StartHeroTwo = () => {
                             <div className="col-xl-7 col-lg-7">
                                 <div className="hero-inner-left">
                                     <div className="hero-title">
-                                        <h2 className="font-size-1-60 split-collab">
-                                            Marketing & SEO Strategies{' '}
-                                            <span className="vre-slide-up-gsap">
-                                                <img
-                                                    src="assets/images/shep/text-shep-3.png"
-                                                    alt="VRE"
-                                                />
-                                            </span>
-                                            Created in our Agency Are Best in
-                                            The World
-                                        </h2>
+                                        <AnimateTitle>
+                                            <h2 className="font-size-1-60 split-collab">
+                                                Marketing & SEO Strategies
+                                                <span className="absolute">
+                                                    <img
+                                                        src={asset.text_shep_3}
+                                                        alt="VRE"
+                                                    />
+                                                </span>
+                                                Created in our Agency Are Best
+                                                in The World
+                                            </h2>
+                                        </AnimateTitle>
                                         <p className="font-size-1-18 skew-up-2">
                                             At Coalition Technologies, we
                                             tightly weave our website design and
@@ -40,7 +45,7 @@ const StartHeroTwo = () => {
                                             innovate constantly, <br /> operate
                                             transparently, and build lasting
                                         </p>
-                                        <div className="hero-info vre-slide-up-gsap">
+                                        <SectionSlideUp className="hero-info vre-slide-up-gsap">
                                             <a
                                                 href="#"
                                                 className="btn-primary-style btn-2 hero-info-btn btn-3"
@@ -88,17 +93,19 @@ const StartHeroTwo = () => {
                                                     Trasted Client
                                                 </a>
                                             </div>
-                                        </div>
+                                        </SectionSlideUp>
                                     </div>
                                 </div>
                             </div>
                             <div className="col-xl-5 col-lg-5">
                                 <div className="hero-2-banner">
-                                    <img
-                                        src={asset.home_2_hero_slider}
-                                        alt="VRE"
-                                        className="vre-slide-down-gsap"
-                                    />
+                                    <SectionSlideDown>
+                                        <img
+                                            src={asset.home_2_hero_slider}
+                                            alt="VRE"
+                                            className="vre-slide-down-gsap"
+                                        />
+                                    </SectionSlideDown>
                                 </div>
                             </div>
                         </div>

@@ -5,7 +5,7 @@ import { ScrollTrigger } from 'gsap/ScrollTrigger'
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger)
 
-const RevelImageAnimation = ({ image }) => {
+const RevelImageAnimation = ({ image, className }) => {
     const containerRef = useRef(null)
     const imageRef = useRef(null)
 
@@ -49,7 +49,7 @@ const RevelImageAnimation = ({ image }) => {
 
     return (
         <div
-            className="hero-banner-img-inner vre-reveal-one"
+            className={`hero-banner-img-inner vre-reveal-one ${className}`}
             ref={containerRef}
         >
             <img

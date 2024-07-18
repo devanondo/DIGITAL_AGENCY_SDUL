@@ -16,10 +16,6 @@ const AboutHomeOne = () => {
                         <div className="col-xl-7 col-lg-7">
                             <div className="about-area-home-1-inner">
                                 <p className="font-size-1-24">about us</p>
-                                {/* <h3 className="font-size-1-40 split-collab">
-                                    The Digital Marketing <br /> Services
-                                    Company
-                                </h3> */}
 
                                 <AnimateTitle className="font-size-1-40">
                                     The Digital Marketing <br /> Services
