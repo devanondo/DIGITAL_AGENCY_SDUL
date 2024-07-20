@@ -147,9 +147,9 @@ const Navbar = () => {
                         </a>
                     </div>
                     <div className="logo">
-                        <a href="index.html">
+                        <Link to="/">
                             <img src={asset.logo_1} alt="VRE" />
-                        </a>
+                        </Link>
                     </div>
                     <div className="main-menu main-menu-1">
                         <ul>
