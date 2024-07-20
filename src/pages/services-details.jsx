@@ -1,6 +1,8 @@
 import { asset } from '../assets/assets'
 import Breadcrumb from '../components/shared/breadcrumb'
 import Footer from '../components/shared/footer'
+import RevelImageAnimation from '../components/shared/gsap/reveal-image'
+import AnimateTitle from '../components/shared/gsap/split-collab'
 import Navbar from '../components/shared/navbar'
 
 const Services_Details = () => {
@@ -39,16 +41,16 @@ const Services_Details = () => {
                     <div className="row">
                         <div className="col-xl-8 col-lg-8">
                             <div className="blog-details-inner">
-                                <div className="blog-details-banner vre-reveal-one">
-                                    <img
-                                        src={asset.blog_details_banner_1}
-                                        alt="VRE"
-                                        className="vre-reveal-image-one"
-                                    />
-                                </div>
-                                <h4 className="font-size-1-35 split-collab">
-                                    How Data Backup & Recovery Can Saves
-                                </h4>
+                                <RevelImageAnimation
+                                    image={asset.blog_details_banner_1}
+                                    className="blog-details-banner vre-reveal-one"
+                                />
+
+                                <AnimateTitle>
+                                    <h4 className="font-size-1-35 split-collab">
+                                        How Data Backup & Recovery Can Saves
+                                    </h4>
+                                </AnimateTitle>
                                 <p className="font-size-1-16">
                                     Lorem ipsum is simply free text used by
                                     copytyping refreshing. Neque porro est qui
@@ -64,13 +66,10 @@ const Services_Details = () => {
                                 </p>
                                 <div className="blog-details-post-wrapper">
                                     <div className="blog-details-post-1">
-                                        <div className="blog-details-post-1-banner vre-reveal-one">
-                                            <img
-                                                src={asset.blog_details_post_1}
-                                                alt="VRE"
-                                                className="vre-reveal-image-one"
-                                            />
-                                        </div>
+                                        <RevelImageAnimation
+                                            image={asset.blog_details_post_1}
+                                            className="blog-details-post-1-banner vre-reveal-one"
+                                        />
                                         <ul>
                                             <li>
                                                 <svg
@@ -289,25 +288,22 @@ const Services_Details = () => {
                                 </div>
                                 <div className="blog-details-post-2">
                                     <div className="blog-details-post-2-inner">
-                                        <div className="blog-details-post-left vre-reveal-one">
-                                            <img
-                                                src={asset.blog_details_post_2}
-                                                alt="VRE"
-                                                className="vre-reveal-image-one"
-                                            />
-                                        </div>
-                                        <div className="blog-details-post-right vre-reveal-one">
-                                            <img
-                                                src={asset.blog_details_post_3}
-                                                alt="VRE"
-                                                className="vre-reveal-image-one"
-                                            />
-                                        </div>
+                                        <RevelImageAnimation
+                                            image={asset.blog_details_post_2}
+                                            className="blog-details-post-left vre-reveal-one"
+                                        />
+
+                                        <RevelImageAnimation
+                                            image={asset.blog_details_post_3}
+                                            className="blog-details-post-right vre-reveal-one"
+                                        />
                                     </div>
-                                    <h5 className="font-size-1-24 split-collab">
-                                        We have been offering human translation
-                                        services
-                                    </h5>
+                                    <AnimateTitle>
+                                        <h5 className="font-size-1-24 split-collab">
+                                            We have been offering human
+                                            translation services
+                                        </h5>
+                                    </AnimateTitle>
                                     <p className="font-size-1-16">
                                         Lorem ipsum is simply free text used by
                                         copytyping refreshing. Neque porro est
@@ -398,10 +394,9 @@ const Services_Details = () => {
                                 </div>
                                 <div className="sitebar-banner vre-reveal-one">
                                     <a href="#">
-                                        <img
-                                            src={asset.sitebar_banner}
-                                            alt="VRE"
+                                        <RevelImageAnimation
                                             className="vre-reveal-image-one"
+                                            image={asset.sitebar_banner}
                                         />
                                     </a>
                                 </div>

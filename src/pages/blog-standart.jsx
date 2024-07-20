@@ -1,6 +1,9 @@
 import { asset } from '../assets/assets'
 import Breadcrumb from '../components/shared/breadcrumb'
 import Footer from '../components/shared/footer'
+import RevelImageAnimation from '../components/shared/gsap/reveal-image'
+import RevelImageTextAnimation from '../components/shared/gsap/reveal-image-text'
+import AnimateTitle from '../components/shared/gsap/split-collab'
 import Navbar from '../components/shared/navbar'
 
 const Blog_Standart = () => {
@@ -81,12 +84,10 @@ const Blog_Standart = () => {
                                         Silvester Scott
                                     </h5>
                                 </div>
-                                <div className="blog-details-banner vre-reveal-one">
-                                    <img
-                                        src={asset.post_1}
-                                        alt="VRE"
-                                        className="vre-reveal-image-one"
-                                    />
+                                <RevelImageTextAnimation
+                                    image={asset.post_1}
+                                    className="blog-details-banner vre-reveal-one"
+                                >
                                     <div className="ppc-agencey-play blog-standart-inner">
                                         <a
                                             href="https://www.youtube.com/watch?v=XbZDL435xw0&t=97s"
@@ -117,10 +118,13 @@ const Blog_Standart = () => {
                                             </div>
                                         </a>
                                     </div>
-                                </div>
-                                <h4 className="font-size-1-35 split-collab">
-                                    Horse Racing Skills That you Definitely Miss
-                                </h4>
+                                </RevelImageTextAnimation>
+                                <AnimateTitle>
+                                    <h4 className="font-size-1-35 split-collab">
+                                        Horse Racing Skills That you Definitely
+                                        Miss
+                                    </h4>
+                                </AnimateTitle>
                                 <div className="blog-details-banner-meta">
                                     <span className="font-size-1-16">
                                         By Admin <span>/</span>
@@ -178,16 +182,15 @@ const Blog_Standart = () => {
                                 </a>
                             </div>
                             <div className="blog-details-inner">
-                                <div className="blog-details-banner vre-reveal-one">
-                                    <img
-                                        src={asset.post_2}
-                                        alt="VRE"
-                                        className="vre-reveal-image-one"
-                                    />
-                                </div>
-                                <h4 className="font-size-1-35 split-collab">
-                                    All the Greatest Moments of Thoroughbred
-                                </h4>
+                                <RevelImageAnimation
+                                    image={asset.post_2}
+                                    className="blog-details-banner vre-reveal-one"
+                                />
+                                <AnimateTitle>
+                                    <h4 className="font-size-1-35 split-collab">
+                                        All the Greatest Moments of Thoroughbred
+                                    </h4>
+                                </AnimateTitle>
                                 <div className="blog-details-banner-meta">
                                     <span className="font-size-1-16">
                                         By Admin <span>/</span>
@@ -245,16 +248,16 @@ const Blog_Standart = () => {
                                 </a>
                             </div>
                             <div className="blog-details-inner">
-                                <div className="blog-details-banner vre-reveal-one">
-                                    <img
-                                        src={asset.post_3}
-                                        alt="VRE"
-                                        className="vre-reveal-image-one"
-                                    />
-                                </div>
-                                <h4 className="font-size-1-35 split-collab">
-                                    One CEO Describe That Goes Into Turning
-                                </h4>
+                                <RevelImageAnimation
+                                    image={asset.post_3}
+                                    className="blog-details-banner vre-reveal-one"
+                                />
+
+                                <AnimateTitle>
+                                    <h4 className="font-size-1-35 split-collab">
+                                        One CEO Describe That Goes Into Turning
+                                    </h4>
+                                </AnimateTitle>
                                 <div className="blog-details-banner-meta">
                                     <span className="font-size-1-16">
                                         By Admin <span>/</span>
@@ -399,13 +402,10 @@ const Blog_Standart = () => {
                                         Popular Post
                                     </h5>
                                     <div className="sitebar-comment-warpeer sitebar-comment-warpeer-1">
-                                        <div className="sitebar-comment-pic vre-reveal-one">
-                                            <img
-                                                src={asset.sitebar_comment_1}
-                                                alt="VRE"
-                                                className="vre-reveal-image-one"
-                                            />
-                                        </div>
+                                        <RevelImageAnimation
+                                            image={asset.sitebar_comment_1}
+                                            className="sitebar-comment-pic vre-reveal-one"
+                                        />
                                         <div className="sitebar-meta">
                                             <div className="sitebar-meta-inner">
                                                 <span>
@@ -470,13 +470,10 @@ const Blog_Standart = () => {
                                         </div>
                                     </div>
                                     <div className="sitebar-comment-warpeer sitebar-comment-warpeer-2">
-                                        <div className="sitebar-comment-pic vre-reveal-one">
-                                            <img
-                                                src={asset.sitebar_comment_2}
-                                                alt="VRE"
-                                                className="vre-reveal-image-one"
-                                            />
-                                        </div>
+                                        <RevelImageAnimation
+                                            image={asset.sitebar_comment_2}
+                                            className="sitebar-comment-pic vre-reveal-one"
+                                        />
                                         <div className="sitebar-meta">
                                             <div className="sitebar-meta-inner">
                                                 <span>
@@ -541,13 +538,10 @@ const Blog_Standart = () => {
                                         </div>
                                     </div>
                                     <div className="sitebar-comment-warpeer sitebar-comment-warpeer-3">
-                                        <div className="sitebar-comment-pic vre-reveal-one">
-                                            <img
-                                                src={asset.sitebar_comment_3}
-                                                alt="VRE"
-                                                className="vre-reveal-image-one"
-                                            />
-                                        </div>
+                                        <RevelImageAnimation
+                                            image={asset.sitebar_comment_3}
+                                            className="sitebar-comment-pic vre-reveal-one"
+                                        />
                                         <div className="sitebar-meta">
                                             <div className="sitebar-meta-inner">
                                                 <span>

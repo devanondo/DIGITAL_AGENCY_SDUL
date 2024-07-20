@@ -1,4 +1,6 @@
 import { asset } from '../../assets/assets'
+import RevelImageAnimation from '../shared/gsap/reveal-image'
+import AnimateTitle from '../shared/gsap/split-collab'
 
 const Marketing_Area = () => {
     return (
@@ -14,12 +16,12 @@ const Marketing_Area = () => {
                         <p>what we offer</p>
                     </div>
                     <div className="main-title">
-                        <h3 className="split-collab">
+                        <AnimateTitle className="split-collab">
                             We Offer A Wide Range Of <br /> Digital Marketing{' '}
-                            <span>
+                            <span className="absolute">
                                 <img src={asset.text_shep_1} alt="" />
                             </span>
-                        </h3>
+                        </AnimateTitle>
                     </div>
                 </div>
                 <div className="marketing-wrapper">
@@ -349,13 +351,10 @@ const Marketing_Area = () => {
                                         </div>
                                     </div>
                                     <div className="marketing-item-wrapper-2">
-                                        <div className="markeing-banner-home-2 vre-reveal-one">
-                                            <img
-                                                src={asset.marketing_banner}
-                                                alt="VRE"
-                                                className="vre-reveal-image-one"
-                                            />
-                                        </div>
+                                        <RevelImageAnimation
+                                            image={asset.marketing_banner}
+                                            className="markeing-banner-home-2 vre-reveal-one"
+                                        />
                                     </div>
                                 </div>
                             </div>
@@ -629,13 +628,10 @@ const Marketing_Area = () => {
                                         </div>
                                     </div>
                                     <div className="marketing-item-wrapper-2">
-                                        <div className="markeing-banner-home-2 vre-reveal-one">
-                                            <img
-                                                src={asset.marketing_banner}
-                                                alt="VRE"
-                                                className="vre-reveal-image-one"
-                                            />
-                                        </div>
+                                        <RevelImageAnimation
+                                            image={asset.marketing_banner}
+                                            className="markeing-banner-home-2 vre-reveal-one"
+                                        />
                                     </div>
                                 </div>
                             </div>
@@ -909,13 +905,10 @@ const Marketing_Area = () => {
                                         </div>
                                     </div>
                                     <div className="marketing-item-wrapper-2">
-                                        <div className="markeing-banner-home-2 vre-reveal-one">
-                                            <img
-                                                src={asset.marketing_banner}
-                                                alt="VRE"
-                                                className="vre-reveal-image-one"
-                                            />
-                                        </div>
+                                        <RevelImageAnimation
+                                            image={asset.marketing_banner}
+                                            className="markeing-banner-home-2 vre-reveal-one"
+                                        />
                                     </div>
                                 </div>
                             </div>
@@ -1189,13 +1182,10 @@ const Marketing_Area = () => {
                                         </div>
                                     </div>
                                     <div className="marketing-item-wrapper-2">
-                                        <div className="markeing-banner-home-2 vre-reveal-one">
-                                            <img
-                                                src={asset.marketing_banner}
-                                                alt="VRE"
-                                                className="vre-reveal-image-one"
-                                            />
-                                        </div>
+                                        <RevelImageAnimation
+                                            image={asset.marketing_banner}
+                                            className="markeing-banner-home-2 vre-reveal-one"
+                                        />
                                     </div>
                                 </div>
                             </div>

@@ -1,4 +1,5 @@
 import { asset } from '../../assets/assets'
+import AnimateTitle from '../shared/gsap/split-collab'
 
 const Team_Area_About_Inner = () => {
     return (
@@ -14,12 +15,12 @@ const Team_Area_About_Inner = () => {
                         <p>OUR TEAM MEMBER</p>
                     </div>
                     <div className="main-title">
-                        <h3 className="split-collab">
+                        <AnimateTitle className="split-collab">
                             Meet With Our CEO <br /> And Founders{' '}
-                            <span>
+                            <span className="absolute">
                                 <img src={asset.text_shep_1} alt="" />
                             </span>
-                        </h3>
+                        </AnimateTitle>
                     </div>
                 </div>
                 <div className="about-page-team">

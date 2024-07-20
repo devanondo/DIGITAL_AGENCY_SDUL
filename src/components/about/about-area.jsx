@@ -1,4 +1,6 @@
 import { asset } from '../../assets/assets'
+import RevelImageAnimation from '../shared/gsap/reveal-image'
+import AnimateTitle from '../shared/gsap/split-collab'
 
 const About_Area = () => {
     return (
@@ -6,13 +8,10 @@ const About_Area = () => {
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-xl-5 col-lg-5">
-                        <div className="about-img vre-reveal-one">
-                            <img
-                                src={asset.about}
-                                alt="VRE"
-                                className="vre-reveal-image-one"
-                            />
-                        </div>
+                        <RevelImageAnimation
+                            image={asset.about}
+                            className="about-img vre-reveal-one"
+                        />
                     </div>
                     <div className="col-xl-7 col-lg-7">
                         <div className="about-info">
@@ -21,10 +20,10 @@ const About_Area = () => {
                                     <p>Why Choose us</p>
                                 </div>
                                 <div className="main-title">
-                                    <h3 className="split-collab">
+                                    <AnimateTitle className="split-collab">
                                         We Are A Creative Digital <br />{' '}
                                         Marketing Agency
-                                    </h3>
+                                    </AnimateTitle>
                                 </div>
                             </div>
                             <p className="font-size-1-16">

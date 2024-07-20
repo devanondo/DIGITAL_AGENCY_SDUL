@@ -1,6 +1,7 @@
 import { asset } from '../assets/assets'
 import Breadcrumb from '../components/shared/breadcrumb'
 import Footer from '../components/shared/footer'
+import RevelImageAnimation from '../components/shared/gsap/reveal-image'
 import Navbar from '../components/shared/navbar'
 
 const NotFound = () => {
@@ -22,19 +23,17 @@ const NotFound = () => {
                 <div className="container">
                     <div className="row justify-content-center">
                         <div className="col-xl-12 col-lg-12 col-md-12">
-                            <div className="error-pic vre-reveal-one">
-                                <img
-                                    src={asset.notFound_png}
-                                    alt="VRE"
-                                    className="vre-reveal-image-one"
-                                />
-                            </div>
+                            <RevelImageAnimation
+                                image={asset.notFound_png}
+                                className="error-pic vre-reveal-one"
+                            />
                         </div>
                     </div>
                     <div className="error-wrapper">
                         <h4 className="font-size-1-48 split-collab">
                             Oops! Nothing Was Found
                         </h4>
+
                         <p className="font-size-1-16">
                             Sed ut perspiciatis unde omnis iste natus voluptatem
                             accusantium doloremque

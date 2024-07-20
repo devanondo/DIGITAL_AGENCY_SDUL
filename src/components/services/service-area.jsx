@@ -1,4 +1,6 @@
 import { asset } from '../../assets/assets'
+import RevelImageAnimation from '../shared/gsap/reveal-image'
+import AnimateTitle from '../shared/gsap/split-collab'
 
 const Service_Area = () => {
     return (
@@ -113,33 +115,27 @@ const Service_Area = () => {
                                     <p>OUR SERVICES</p>
                                 </div>
                                 <div className="main-title">
-                                    <h3 className="split-collab">
+                                    <AnimateTitle className="split-collab">
                                         come on, we will <br /> help you buIld
                                         your <br /> dream project.
-                                        <span>
+                                        <span className="absolute">
                                             <img
                                                 src={asset.text_shep_1}
                                                 alt=""
                                             />
                                         </span>
-                                    </h3>
+                                    </AnimateTitle>
                                 </div>
                             </div>
                             <div className="services-banner-inner">
-                                <div className="services-img vre-reveal-one">
-                                    <img
-                                        src={asset.services_1_home_3}
-                                        alt="VRE"
-                                        className="vre-reveal-image-one"
-                                    />
-                                </div>
-                                <div className="services-img vre-reveal-one">
-                                    <img
-                                        src={asset.services_1_home_3}
-                                        alt="VRE"
-                                        className="vre-reveal-image-one"
-                                    />
-                                </div>
+                                <RevelImageAnimation
+                                    image={asset.services_1_home_3}
+                                    className="services-img vre-reveal-one"
+                                />
+                                <RevelImageAnimation
+                                    image={asset.services_2_home_3}
+                                    className="services-img vre-reveal-one"
+                                />
                             </div>
                         </div>
                     </div>

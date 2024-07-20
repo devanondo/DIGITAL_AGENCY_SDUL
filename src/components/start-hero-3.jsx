@@ -1,4 +1,7 @@
 import { asset } from '../assets/assets'
+import SkewUpText from './shared/gsap/skew-up'
+import SectionSlideUp from './shared/gsap/slide-up'
+import AnimateTitle from './shared/gsap/split-collab'
 
 const StartHeroThree = () => {
     return (
@@ -17,21 +20,24 @@ const StartHeroThree = () => {
                 <div className="hero-inner">
                     <div className="hero-inner-left">
                         <div className="hero-title">
-                            <h2 className="font-size-1-60 split-collab">
+                            <AnimateTitle
+                                tag="h2"
+                                className="font-size-1-60 split-collab"
+                            >
                                 Digital Marketing Solution
-                                <span className="vre-slide-up-gsap home-3-hero-text-shep">
+                                <span className="vre-slide-up-gsap home-3-hero-text-shep absolute">
                                     <img src={asset.text_shep_2} alt="VRE" />
                                 </span>
                                 For Your Business
-                            </h2>
-                            <p className="font-size-1-18 skew-up-2">
+                            </AnimateTitle>
+                            <SkewUpText className="font-size-1-18 skew-up-2">
                                 At Coalition Technologies, we tightly weave our
                                 website design and search <br />
                                 engineoptimization work to exceed our clients
                                 goals. We innovate constantly, <br /> operate
                                 transparently, and build lasting
-                            </p>
-                            <div className="hero-info vre-slide-up-gsap">
+                            </SkewUpText>
+                            <SectionSlideUp className="hero-info vre-slide-up-gsap">
                                 <a
                                     href="#"
                                     className="btn-primary-style btn-2 hero-info-btn btn-3 hero-info-btn-home-3"
@@ -70,35 +76,46 @@ const StartHeroThree = () => {
                                 <div className="some-clients-view">
                                     <img src={asset.rating} alt="VRE" />
                                 </div>
-                            </div>
+                            </SectionSlideUp>
                         </div>
                     </div>
                     <div className="hero-2-banner hero-3-banner">
-                        <img
-                            src={asset.home_3_hero_slider}
-                            alt="VRE"
-                            className="vre-slide-down-gsap"
-                        />
-                        <img
-                            src={asset.home_3_hero_banner_shep_1}
-                            alt="VRE"
-                            className="home-3-hero-banner-shep-1 vre-slide-up-gsap"
-                        />
-                        <img
-                            src={asset.home_3_hero_banner_shep_2}
-                            alt="VRE"
-                            className="home-3-hero-banner-shep-2 vre-slide-up-gsap"
-                        />
-                        <img
-                            src={asset.home_3_hero_banner_shep_3}
-                            alt="VRE"
-                            className="home-3-hero-banner-shep-3 vre-slide-up-gsap"
-                        />
-                        <img
-                            src={asset.home_3_hero_banner_shep_4}
-                            alt="VRE"
-                            className="home-3-hero-banner-shep-4 vre-slide-up-gsap"
-                        />
+                        <SectionSlideUp>
+                            <img
+                                src={asset.home_3_hero_slider}
+                                alt="VRE"
+                                className="vre-slide-down-gsap"
+                            />
+                        </SectionSlideUp>
+
+                        <SectionSlideUp>
+                            <img
+                                src={asset.home_3_hero_banner_shep_1}
+                                alt="VRE"
+                                className="home-3-hero-banner-shep-1 vre-slide-up-gsap"
+                            />
+                        </SectionSlideUp>
+                        <SectionSlideUp>
+                            <img
+                                src={asset.home_3_hero_banner_shep_2}
+                                alt="VRE"
+                                className="home-3-hero-banner-shep-2 vre-slide-up-gsap"
+                            />
+                        </SectionSlideUp>
+                        <SectionSlideUp>
+                            <img
+                                src={asset.home_3_hero_banner_shep_3}
+                                alt="VRE"
+                                className="home-3-hero-banner-shep-3 vre-slide-up-gsap"
+                            />
+                        </SectionSlideUp>
+                        <SectionSlideUp>
+                            <img
+                                src={asset.home_3_hero_banner_shep_4}
+                                alt="VRE"
+                                className="home-3-hero-banner-shep-4 vre-slide-up-gsap"
+                            />
+                        </SectionSlideUp>
                     </div>
                 </div>
             </div>

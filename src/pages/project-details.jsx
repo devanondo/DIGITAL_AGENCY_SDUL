@@ -1,6 +1,8 @@
 import { asset } from '../assets/assets'
 import Breadcrumb from '../components/shared/breadcrumb'
 import Footer from '../components/shared/footer'
+import RevelImageAnimation from '../components/shared/gsap/reveal-image'
+import AnimateTitle from '../components/shared/gsap/split-collab'
 import Navbar from '../components/shared/navbar'
 
 const Project_Details = () => {
@@ -27,24 +29,18 @@ const Project_Details = () => {
                 <div className="container">
                     <div className="project-details-wrapper">
                         <div className="project-details-banner">
-                            <div className="project-details-banner-inner-1 vre-reveal-one">
-                                <img
-                                    src={asset.project_details_1}
-                                    alt="VRE"
-                                    className="vre-reveal-image-one"
-                                />
-                            </div>
-                            <div className="project-details-banner-inner-2 vre-reveal-one">
-                                <img
-                                    src={asset.project_details_2}
-                                    alt="VRE"
-                                    className="vre-reveal-image-one"
-                                />
-                            </div>
+                            <RevelImageAnimation
+                                image={asset.project_details_1}
+                                className="project-details-banner-inner-1 vre-reveal-one"
+                            />
+                            <RevelImageAnimation
+                                image={asset.project_details_2}
+                                className="project-details-banner-inner-2 vre-reveal-one"
+                            />
                         </div>
-                        <h3 className="font-size-1-45 split-collab">
+                        <AnimateTitle className="font-size-1-45 split-collab">
                             Interesting facts in Development
-                        </h3>
+                        </AnimateTitle>
                         <div className="project-details-info">
                             <div className="project-details-info-item">
                                 <span className="project-details-info-name font-size-1-24">
@@ -100,9 +96,11 @@ const Project_Details = () => {
                             Unfortunately, there’s anoth
                         </p>
                         <div className="project-details-result">
-                            <h4 className="font-size-1-35 split-collab">
-                                The Results of Our Project
-                            </h4>
+                            <AnimateTitle>
+                                <h4 className="font-size-1-35 split-collab">
+                                    The Results of Our Project
+                                </h4>
+                            </AnimateTitle>
                             <p className="font-size-1-16">
                                 Lorem ipsum is simply free text used by
                                 copytyping refreshing. Neque porro est qui
@@ -114,13 +112,10 @@ const Project_Details = () => {
                                 sed efficitur turpis gilla sed{' '}
                             </p>
                             <div className="project-details-inner">
-                                <div className="project-details-inner-img vre-reveal-one">
-                                    <img
-                                        src={asset.project_details_3}
-                                        alt="VRE"
-                                        className="vre-reveal-image-one"
-                                    />
-                                </div>
+                                <RevelImageAnimation
+                                    image={asset.project_details_3}
+                                    className="project-details-inner-img vre-reveal-one"
+                                />
                                 <div className="project-details-inner-result">
                                     <h5 className="font-size-1-24">
                                         Digital Marketing Around the World

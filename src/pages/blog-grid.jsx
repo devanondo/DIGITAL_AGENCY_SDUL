@@ -1,6 +1,8 @@
 import { asset } from '../assets/assets'
 import Breadcrumb from '../components/shared/breadcrumb'
 import Footer from '../components/shared/footer'
+import SectionSlideDown from '../components/shared/gsap/slide-down'
+import AnimateTitle from '../components/shared/gsap/split-collab'
 import Navbar from '../components/shared/navbar'
 
 const Blog_Grid = () => {
@@ -26,19 +28,19 @@ const Blog_Grid = () => {
                             <p>OUR LATEST BLOGS</p>
                         </div>
                         <div className="main-title">
-                            <h3 className="split-collab">
+                            <AnimateTitle className="split-collab">
                                 Empowering Brands With <br />
                                 Digital Brilliance{' '}
-                                <span>
+                                <span className="absolute">
                                     <img src={asset.text_shep_1} alt="" />
                                 </span>
-                            </h3>
+                            </AnimateTitle>
                         </div>
                     </div>
                     <div className="blog-area-wrapper">
                         <div className="row">
                             <div className="col-xl-4 col-lg-4 col-md-6">
-                                <div className="blog-inner vre-slide-down-gsap">
+                                <SectionSlideDown className="blog-inner vre-slide-down-gsap">
                                     <h5 className="font-size-1-24">
                                         How Marketing Compliance <br /> Your
                                         Marketing Strategy
@@ -172,10 +174,10 @@ const Blog_Grid = () => {
                                             </a>
                                         </div>
                                     </div>
-                                </div>
+                                </SectionSlideDown>
                             </div>
                             <div className="col-xl-4 col-lg-4 col-md-6">
-                                <div className="blog-inner vre-slide-down-gsap">
+                                <SectionSlideDown className="blog-inner vre-slide-down-gsap">
                                     <h5 className="font-size-1-24">
                                         How Marketing Compliance <br /> Your
                                         Marketing Strategy
@@ -309,10 +311,10 @@ const Blog_Grid = () => {
                                             </a>
                                         </div>
                                     </div>
-                                </div>
+                                </SectionSlideDown>
                             </div>
                             <div className="col-xl-4 col-lg-4 col-md-6">
-                                <div className="blog-inner vre-slide-down-gsap">
+                                <SectionSlideDown className="blog-inner vre-slide-down-gsap">
                                     <h5 className="font-size-1-24">
                                         How Marketing Compliance <br /> Your
                                         Marketing Strategy
@@ -446,10 +448,10 @@ const Blog_Grid = () => {
                                             </a>
                                         </div>
                                     </div>
-                                </div>
+                                </SectionSlideDown>
                             </div>
                             <div className="col-xl-4 col-lg-4 col-md-6">
-                                <div className="blog-inner vre-slide-down-gsap">
+                                <SectionSlideDown className="blog-inner vre-slide-down-gsap">
                                     <h5 className="font-size-1-24">
                                         How Marketing Compliance <br /> Your
                                         Marketing Strategy
@@ -584,10 +586,10 @@ const Blog_Grid = () => {
                                             </a>
                                         </div>
                                     </div>
-                                </div>
+                                </SectionSlideDown>
                             </div>
                             <div className="col-xl-4 col-lg-4 col-md-6">
-                                <div className="blog-inner vre-slide-down-gsap">
+                                <SectionSlideDown className="blog-inner vre-slide-down-gsap">
                                     <h5 className="font-size-1-24">
                                         How Marketing Compliance <br /> Your
                                         Marketing Strategy
@@ -721,10 +723,10 @@ const Blog_Grid = () => {
                                             </a>
                                         </div>
                                     </div>
-                                </div>
+                                </SectionSlideDown>
                             </div>
                             <div className="col-xl-4 col-lg-4 col-md-6">
-                                <div className="blog-inner vre-slide-down-gsap">
+                                <SectionSlideDown className="blog-inner vre-slide-down-gsap">
                                     <h5 className="font-size-1-24">
                                         How Marketing Compliance <br /> Your
                                         Marketing Strategy
@@ -858,7 +860,7 @@ const Blog_Grid = () => {
                                             </a>
                                         </div>
                                     </div>
-                                </div>
+                                </SectionSlideDown>
                             </div>
                         </div>
                     </div>

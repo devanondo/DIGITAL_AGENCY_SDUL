@@ -54,8 +54,8 @@ import home_3_hero_banner_shep_3 from './images/shep/home-3-hero-banner-shep-3.p
 import home_3_hero_banner_shep_4 from './images/shep/home-3-hero-banner-shep-4.png'
 
 import offer_1_home_3 from './images/home-3/offer-1-home-3.png'
-import offer_2_home_3 from './images/home-3/offer-1-home-3.png'
-import offer_3_home_3 from './images/home-3/offer-1-home-3.png'
+import offer_2_home_3 from './images/home-3/offer-2-home-3.png'
+import offer_3_home_3 from './images/home-3/offer-3-home-3.png'
 
 import services_1_home_3 from './images/home-3/services-1-home-3.png'
 import services_2_home_3 from './images/home-3/services-2-home-3.png'

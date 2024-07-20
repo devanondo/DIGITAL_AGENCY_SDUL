@@ -1,4 +1,5 @@
 import { asset } from '../../assets/assets'
+import AnimateTitle from '../shared/gsap/split-collab'
 
 const Faq_Area_One = () => {
     return (
@@ -18,16 +19,16 @@ const Faq_Area_One = () => {
                                         <p>FAQ</p>
                                     </div>
                                     <div className="main-title">
-                                        <h3 className="split-collab">
+                                        <AnimateTitle className="split-collab">
                                             Frequently Asked <br />
                                             Questions
-                                            <span>
+                                            <span className="absolute">
                                                 <img
                                                     src={asset.text_shep_1}
                                                     alt=""
                                                 />
                                             </span>
-                                        </h3>
+                                        </AnimateTitle>
                                     </div>
                                 </div>
                                 <p className="font-size-1-16">

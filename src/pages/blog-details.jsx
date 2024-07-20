@@ -1,6 +1,9 @@
 import { asset } from '../assets/assets'
 import Breadcrumb from '../components/shared/breadcrumb'
 import Footer from '../components/shared/footer'
+import RevelImageAnimation from '../components/shared/gsap/reveal-image'
+import SectionSlideDown from '../components/shared/gsap/slide-down'
+import AnimateTitle from '../components/shared/gsap/split-collab'
 import Navbar from '../components/shared/navbar'
 
 const Blog_Details = () => {
@@ -39,16 +42,15 @@ const Blog_Details = () => {
                     <div className="row">
                         <div className="col-xl-8 col-lg-8">
                             <div className="blog-details-inner">
-                                <div className="blog-details-banner vre-reveal-one">
-                                    <img
-                                        src={asset.blog_details_banner_1}
-                                        alt="VRE"
-                                        className="vre-reveal-image-one"
-                                    />
-                                </div>
-                                <h4 className="font-size-1-35 split-collab">
-                                    How Data Backup & Recovery Can Saves
-                                </h4>
+                                <RevelImageAnimation
+                                    image={asset.blog_details_banner_1}
+                                    className="blog-details-banner vre-reveal-one"
+                                />
+                                <AnimateTitle>
+                                    <h4 className="font-size-1-35 split-collab">
+                                        How Data Backup & Recovery Can Saves
+                                    </h4>
+                                </AnimateTitle>
                                 <div className="blog-details-banner-meta">
                                     <span className="font-size-1-16">
                                         <svg
@@ -145,13 +147,10 @@ const Blog_Details = () => {
                                 </p>
                                 <div className="blog-details-post-wrapper">
                                     <div className="blog-details-post-1">
-                                        <div className="blog-details-post-1-banner vre-reveal-one">
-                                            <img
-                                                src={asset.blog_details_post_1}
-                                                alt="VRE"
-                                                className="vre-reveal-image-one"
-                                            />
-                                        </div>
+                                        <RevelImageAnimation
+                                            image={asset.blog_details_post_1}
+                                            className="blog-details-post-1-banner vre-reveal-one"
+                                        />
                                         <ul>
                                             <li>
                                                 <svg
@@ -353,9 +352,11 @@ const Blog_Details = () => {
                                             </li>
                                         </ul>
                                     </div>
-                                    <h5 className="font-size-1-30 split-collab">
-                                        Is The Only Theme you Will Ever Need
-                                    </h5>
+                                    <AnimateTitle>
+                                        <h5 className="font-size-1-30 split-collab">
+                                            Is The Only Theme you Will Ever Need
+                                        </h5>
+                                    </AnimateTitle>
                                     <p className="font-size-1-16">
                                         England dotted with a lush, green
                                         landscape, rustic villages and throbbing
@@ -370,25 +371,21 @@ const Blog_Details = () => {
                                 </div>
                                 <div className="blog-details-post-2">
                                     <div className="blog-details-post-2-inner">
-                                        <div className="blog-details-post-left vre-reveal-one">
-                                            <img
-                                                src={asset.blog_details_post_2}
-                                                alt="VRE"
-                                                className="vre-reveal-image-one"
-                                            />
-                                        </div>
-                                        <div className="blog-details-post-right vre-reveal-one">
-                                            <img
-                                                src={asset.blog_details_post_3}
-                                                alt="VRE"
-                                                className="vre-reveal-image-one"
-                                            />
-                                        </div>
+                                        <RevelImageAnimation
+                                            image={asset.blog_details_post_2}
+                                            className="blog-details-post-left vre-reveal-one"
+                                        />
+                                        <RevelImageAnimation
+                                            image={asset.blog_details_post_3}
+                                            className="blog-details-post-right vre-reveal-one"
+                                        />
                                     </div>
-                                    <h5 className="font-size-1-24 split-collab">
-                                        We have been offering human translation
-                                        services
-                                    </h5>
+                                    <AnimateTitle>
+                                        <h5 className="font-size-1-24 split-collab">
+                                            We have been offering human
+                                            translation services
+                                        </h5>
+                                    </AnimateTitle>
                                     <p className="font-size-1-16">
                                         Lorem ipsum is simply free text used by
                                         copytyping refreshing. Neque porro est
@@ -444,10 +441,12 @@ const Blog_Details = () => {
                                             Silvester Scott
                                         </h5>
                                     </div>
-                                    <h5 className="font-size-1-24 split-collab">
-                                        We seize opportunities to innovate and
-                                        grow
-                                    </h5>
+                                    <AnimateTitle>
+                                        <h5 className="font-size-1-24 split-collab">
+                                            We seize opportunities to innovate
+                                            and grow
+                                        </h5>
+                                    </AnimateTitle>
                                     <p className="font-size-1-16">
                                         Lorem ipsum is simply free text used by
                                         copytyping refreshing. Neque porro est
@@ -460,13 +459,10 @@ const Blog_Details = () => {
                                     </p>
                                 </div>
                                 <div className="blog-details-writer">
-                                    <div className="blog-details-writer-img vre-reveal-one">
-                                        <img
-                                            src={asset.blog_details_writter}
-                                            alt="VRE"
-                                            className="vre-reveal-image-one"
-                                        />
-                                    </div>
+                                    <RevelImageAnimation
+                                        image={asset.blog_details_writter}
+                                        className="blog-details-writer-img vre-reveal-one"
+                                    />
                                     <div className="blog-details-writer-info">
                                         <h4 className="font-size-1-30">
                                             Jonas Lawrence
@@ -573,15 +569,10 @@ const Blog_Details = () => {
                                         Comments (2)
                                     </h4>
                                     <div className="blog-details-wrapper-comment blog-details-wrapper-comment-1">
-                                        <div className="blog-details-commente-pic vre-reveal-one">
-                                            <img
-                                                src={
-                                                    asset.blog_details_comment_1
-                                                }
-                                                alt="VRE"
-                                                className="vre-reveal-image-one"
-                                            />
-                                        </div>
+                                        <RevelImageAnimation
+                                            image={asset.blog_details_comment_1}
+                                            className="blog-details-commente-pic vre-reveal-one"
+                                        />
                                         <div className="blog-details-comment-info">
                                             <div className="blog-details-comment-name">
                                                 <div className="blog-details-comment-name-inner">
@@ -613,15 +604,10 @@ const Blog_Details = () => {
                                         </div>
                                     </div>
                                     <div className="blog-details-wrapper-comment blog-details-wrapper-comment-2">
-                                        <div className="blog-details-commente-pic vre-reveal-one">
-                                            <img
-                                                src={
-                                                    asset.blog_details_comment_2
-                                                }
-                                                alt="VRE"
-                                                className="vre-reveal-image-one"
-                                            />
-                                        </div>
+                                        <RevelImageAnimation
+                                            image={asset.blog_details_comment_2}
+                                            className="blog-details-commente-pic vre-reveal-one"
+                                        />
                                         <div className="blog-details-comment-info">
                                             <div className="blog-details-comment-name">
                                                 <div className="blog-details-comment-name-inner">
@@ -657,31 +643,33 @@ const Blog_Details = () => {
                                     <h4 className="font-size-1-30">
                                         Leave a Reply
                                     </h4>
-                                    <form
-                                        action="#"
-                                        className="vre-slide-down-gsap"
-                                    >
-                                        <div className="input-item">
+                                    <SectionSlideDown>
+                                        <form
+                                            action="#"
+                                            className="vre-slide-down-gsap"
+                                        >
+                                            <div className="input-item">
+                                                <input
+                                                    type="text"
+                                                    placeholder="Your Name"
+                                                />
+                                                <input
+                                                    type="email"
+                                                    placeholder="Email Address"
+                                                />
+                                            </div>
                                             <input
                                                 type="text"
-                                                placeholder="Your Name"
+                                                placeholder="Website"
                                             />
+                                            <textarea placeholder="Comment"></textarea>
                                             <input
-                                                type="email"
-                                                placeholder="Email Address"
+                                                type="submit"
+                                                value="Post Comment"
+                                                className="btn-primary-style btn-2 hero-info-btn btn-3 btn-4 btn-4-home-3"
                                             />
-                                        </div>
-                                        <input
-                                            type="text"
-                                            placeholder="Website"
-                                        />
-                                        <textarea placeholder="Comment"></textarea>
-                                        <input
-                                            type="submit"
-                                            value="Post Comment"
-                                            className="btn-primary-style btn-2 hero-info-btn btn-3 btn-4 btn-4-home-3"
-                                        />
-                                    </form>
+                                        </form>
+                                    </SectionSlideDown>
                                 </div>
                             </div>
                         </div>
@@ -980,10 +968,8 @@ const Blog_Details = () => {
                                 </div>
                                 <div className="sitebar-banner vre-reveal-one">
                                     <a href="#">
-                                        <img
-                                            src={asset.sitebar_banner}
-                                            alt="VRE"
-                                            className="vre-reveal-image-one"
+                                        <RevelImageAnimation
+                                            image={asset.sitebar_banner}
                                         />
                                     </a>
                                 </div>

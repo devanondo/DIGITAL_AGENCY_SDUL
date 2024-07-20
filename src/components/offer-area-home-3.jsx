@@ -1,4 +1,6 @@
 import { asset } from '../assets/assets'
+import RevelImageTextAnimation from './shared/gsap/reveal-image-text'
+import AnimateTitle from './shared/gsap/split-collab'
 
 const Offer_Area_Home_3 = () => {
     return (
@@ -14,23 +16,21 @@ const Offer_Area_Home_3 = () => {
                         <p>what we offer</p>
                     </div>
                     <div className="main-title">
-                        <h3 className="split-collab">
+                        <AnimateTitle className="split-collab">
                             We Offer A Wide Range Of <br /> Digital Marketing{' '}
-                            <span>
+                            <span className="absolute">
                                 <img src={asset.text_shep_2} alt="" />
                             </span>
-                        </h3>
+                        </AnimateTitle>
                     </div>
                 </div>
                 <div className="offer-wrapper">
                     <div className="row justify-content-center">
                         <div className="col-xl-4 col-lg-4 col-md-6">
-                            <div className="offer-inner vre-reveal-one">
-                                <img
-                                    src={asset.offer_1_home_3}
-                                    alt="VRE"
-                                    className="vre-reveal-image-one"
-                                />
+                            <RevelImageTextAnimation
+                                image={asset.offer_1_home_3}
+                                className="offer-inner vre-reveal-one"
+                            >
                                 <div className="offer-name">
                                     <h5 className="font-size-1-24">
                                         <a href="services-details.html">
@@ -73,15 +73,13 @@ const Offer_Area_Home_3 = () => {
                                         </svg>
                                     </span>
                                 </div>
-                            </div>
+                            </RevelImageTextAnimation>
                         </div>
                         <div className="col-xl-4 col-lg-4 col-md-6  vre-slide-up-gsap">
-                            <div className="offer-inner vre-reveal-one">
-                                <img
-                                    src={asset.offer_2_home_3}
-                                    alt="VRE"
-                                    className="vre-reveal-image-one"
-                                />
+                            <RevelImageTextAnimation
+                                image={asset.offer_2_home_3}
+                                className="offer-inner vre-reveal-one"
+                            >
                                 <div className="offer-name">
                                     <h5 className="font-size-1-24">
                                         <a href="services-details.html">
@@ -124,15 +122,13 @@ const Offer_Area_Home_3 = () => {
                                         </svg>
                                     </span>
                                 </div>
-                            </div>
+                            </RevelImageTextAnimation>
                         </div>
                         <div className="col-xl-4 col-lg-4 col-md-6 vre-slide-up-gsap">
-                            <div className="offer-inner vre-reveal-one">
-                                <img
-                                    src={asset.offer_3_home_3}
-                                    alt="VRE"
-                                    className="vre-reveal-image-one"
-                                />
+                            <RevelImageTextAnimation
+                                image={asset.offer_3_home_3}
+                                className="offer-inner vre-reveal-one"
+                            >
                                 <div className="offer-name">
                                     <h5 className="font-size-1-24">
                                         <a href="services-details.html">
@@ -175,7 +171,7 @@ const Offer_Area_Home_3 = () => {
                                         </svg>
                                     </span>
                                 </div>
-                            </div>
+                            </RevelImageTextAnimation>
                         </div>
                     </div>
                 </div>
