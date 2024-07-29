@@ -1,5 +1,6 @@
 /* eslint-disable react/prop-types */
 import { asset } from '../../assets/assets'
+import AnimateTitle from './gsap/split-collab'
 
 const Breadcrumb = ({ pageName }) => {
     return (
@@ -9,7 +10,9 @@ const Breadcrumb = ({ pageName }) => {
         >
             <div className="container">
                 <div className="bread-crumb-title">
-                    <h2 className="split-collab"> {pageName} </h2>
+                    <AnimateTitle className="split-collab" tag="h2">
+                        {pageName}
+                    </AnimateTitle>
                 </div>
                 <div className="bread-crumb-wrapper">
                     <a href="#">Home</a>

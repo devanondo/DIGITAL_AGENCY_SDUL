@@ -1,6 +1,7 @@
-import React, { useState } from 'react'
+import React, { useEffect, useState } from 'react'
 import { Link } from 'react-router-dom'
 import { asset } from '../../assets/assets'
+import './navbar.scss'
 
 const Navbar = () => {
     const [showSearch, setShowSearch] = useState(false)
@@ -105,8 +106,44 @@ const Navbar = () => {
         {
             title: 'Contact',
             key: 'Contact',
+            url: '/contact',
         },
     ]
+
+    let lastScroll = 0
+
+    useEffect(() => {
+        window.addEventListener('scroll', handlenav)
+
+        return () => {
+            window.removeEventListener('scroll', handlenav)
+        }
+    }, [])
+
+    function handlenav() {
+        const body = document.body
+
+        const currentScroll = window.pageYOffset
+
+        if (currentScroll <= 0) {
+            body.classList.remove('scroll-up')
+        }
+        if (
+            currentScroll > lastScroll &&
+            !body.classList.contains('scroll-down')
+        ) {
+            body.classList.remove('scroll-up')
+            body.classList.add('scroll-down')
+        }
+        if (
+            currentScroll < lastScroll &&
+            body.classList.contains('scroll-down')
+        ) {
+            body.classList.remove('scroll-down')
+            body.classList.add('scroll-up')
+        }
+        lastScroll = currentScroll
+    }
 
     // mobile - menu - active
     return (
@@ -146,45 +183,48 @@ const Navbar = () => {
                         </a>
                     </div>
                     <div className="logo">
-                        <a href="index.html">
+                        <Link to="/">
                             <img src={asset.logo_1} alt="VRE" />
-                        </a>
+                        </Link>
                     </div>
                     <div className="main-menu main-menu-1">
                         <ul>
                             {menus.map((menu, index) => (
                                 <li key={menu.title + index}>
                                     <Link
-                                        to="#"
+                                        to={menu.url ? `${menu.url}` : '#'}
                                         className="font-size-1-18 transition-1"
                                     >
                                         {menu.title}
-                                        <span>
-                                            <svg
-                                                width="8"
-                                                height="14"
-                                                viewBox="0 0 8 14"
-                                                fill="none"
-                                                xmlns="http://www.w3.org/2000/svg"
-                                            >
-                                                <g clip-path="url(#clip0_1_9793)">
-                                                    <path
-                                                        d="M3.52937 12.868C3.78979 13.2098 4.21271 13.2098 4.47312 12.868L7.80646 8.49298C8.06687 8.15118 8.06687 7.59611 7.80646 7.25431C7.54604 6.91251 7.12312 6.91251 6.86271 7.25431L4.66687 10.1391L4.66687 1.75001C4.66687 1.26603 4.36896 0.875012 4.00021 0.875012C3.63146 0.875012 3.33354 1.26603 3.33354 1.75001L3.33354 10.1391L1.13771 7.25704C0.87729 6.91525 0.454373 6.91525 0.193956 7.25704C-0.0664601 7.59884 -0.0664602 8.15392 0.193956 8.49571L3.52729 12.8707L3.52937 12.868Z"
-                                                        fill="#CCDEFF"
-                                                    />
-                                                </g>
-                                                <defs>
-                                                    <clipPath id="clip0_1_9793">
-                                                        <rect
-                                                            width="8"
-                                                            height="14"
-                                                            fill="white"
-                                                            transform="translate(8 14) rotate(-180)"
+
+                                        {menu.sub_menus?.length ? (
+                                            <span>
+                                                <svg
+                                                    width="8"
+                                                    height="14"
+                                                    viewBox="0 0 8 14"
+                                                    fill="none"
+                                                    xmlns="http://www.w3.org/2000/svg"
+                                                >
+                                                    <g clip-path="url(#clip0_1_9793)">
+                                                        <path
+                                                            d="M3.52937 12.868C3.78979 13.2098 4.21271 13.2098 4.47312 12.868L7.80646 8.49298C8.06687 8.15118 8.06687 7.59611 7.80646 7.25431C7.54604 6.91251 7.12312 6.91251 6.86271 7.25431L4.66687 10.1391L4.66687 1.75001C4.66687 1.26603 4.36896 0.875012 4.00021 0.875012C3.63146 0.875012 3.33354 1.26603 3.33354 1.75001L3.33354 10.1391L1.13771 7.25704C0.87729 6.91525 0.454373 6.91525 0.193956 7.25704C-0.0664601 7.59884 -0.0664602 8.15392 0.193956 8.49571L3.52729 12.8707L3.52937 12.868Z"
+                                                            fill="#CCDEFF"
                                                         />
-                                                    </clipPath>
-                                                </defs>
-                                            </svg>
-                                        </span>
+                                                    </g>
+                                                    <defs>
+                                                        <clipPath id="clip0_1_9793">
+                                                            <rect
+                                                                width="8"
+                                                                height="14"
+                                                                fill="white"
+                                                                transform="translate(8 14) rotate(-180)"
+                                                            />
+                                                        </clipPath>
+                                                    </defs>
+                                                </svg>
+                                            </span>
+                                        ) : null}
                                     </Link>
                                     <ul className="submenu submenu-1">
                                         {menu.sub_menus &&

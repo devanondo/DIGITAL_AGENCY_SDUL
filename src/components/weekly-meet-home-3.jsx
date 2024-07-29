@@ -1,4 +1,5 @@
 import { asset } from '../assets/assets'
+import AnimateTitle from './shared/gsap/split-collab'
 
 const Weekly_Meet_Home_3 = () => {
     return (
@@ -9,9 +10,9 @@ const Weekly_Meet_Home_3 = () => {
                         <source src={asset.weekly_meet_MP4} type="video/mp4" />
                     </video>
                 </div>
-                <div className="weekly-meet-text">
+                <AnimateTitle className="weekly-meet-text">
                     <h1 className="split-collab">Weekly Meeting</h1>
-                </div>
+                </AnimateTitle>
             </div>
         </section>
     )

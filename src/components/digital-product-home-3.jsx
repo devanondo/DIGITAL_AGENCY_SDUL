@@ -1,4 +1,8 @@
 import { asset } from '../assets/assets'
+import SkewUpText from './shared/gsap/skew-up'
+import SectionSlideDown from './shared/gsap/slide-down'
+import SectionSlideUp from './shared/gsap/slide-up'
+import AnimateTitle from './shared/gsap/split-collab'
 
 const Digital_product_Home_3 = () => {
     return (
@@ -10,14 +14,17 @@ const Digital_product_Home_3 = () => {
                 <div className="row">
                     <div className="col-xl-6 col-lg-6">
                         <div className="digital-product-title">
-                            <h2 className="font-size-1-50 split-collab">
+                            <AnimateTitle
+                                tag="h2"
+                                className="font-size-1-50 split-collab"
+                            >
                                 We use Digital Product to <br /> Show our
                                 Appreciation
-                            </h2>
-                            <p className="font-size-1-16">
+                            </AnimateTitle>
+                            <SkewUpText className="font-size-1-16">
                                 Dapibus interdum senectus malesuada est nec
                                 morbi cursus.
-                            </p>
+                            </SkewUpText>
                             <a
                                 href="services.html"
                                 className="btn-primary-style btn-2 hero-info-btn btn-3 btn-4 btn-4-home-3"
@@ -29,32 +36,32 @@ const Digital_product_Home_3 = () => {
                     <div className="col-xl-5 col-lg-5 offset-xl-1 offset-lg-1">
                         <div className="digital-product-counter">
                             <div className="digital-product-counter-1">
-                                <div className="item-1 vre-slide-down-gsap">
+                                <SectionSlideDown className="item-1 vre-slide-down-gsap">
                                     <span className="font-size-1-45">380K</span>
                                     <p className="font-size-1-20">
                                         Project Completed
                                     </p>
-                                </div>
-                                <div className="item-2 vre-slide-up-gsap">
+                                </SectionSlideDown>
+                                <SectionSlideUp className="item-2 vre-slide-up-gsap">
                                     <span className="font-size-1-45">680M</span>
                                     <p className="font-size-1-20">
                                         Satisfied Clients
                                     </p>
-                                </div>
+                                </SectionSlideUp>
                             </div>
                             <div className="digital-product-counter-2">
-                                <div className="item-3 vre-slide-up-gsap">
+                                <SectionSlideUp className="item-3 vre-slide-up-gsap">
                                     <span className="font-size-1-45">720+</span>
                                     <p className="font-size-1-20">
                                         Happy Customers
                                     </p>
-                                </div>
-                                <div className="item-4 vre-slide-down-gsap">
+                                </SectionSlideUp>
+                                <SectionSlideDown className="item-4 vre-slide-down-gsap">
                                     <span className="font-size-1-45">1700</span>
                                     <p className="font-size-1-20">
                                         Competitors keywords
                                     </p>
-                                </div>
+                                </SectionSlideDown>
                             </div>
                         </div>
                     </div>

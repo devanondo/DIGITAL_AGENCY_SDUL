@@ -1,4 +1,5 @@
 import { asset } from '../assets/assets'
+import AnimateTitle from './shared/gsap/split-collab'
 
 const Plan_Area_Home_3 = () => {
     return (
@@ -19,16 +20,16 @@ const Plan_Area_Home_3 = () => {
                         <p>our pricing plans</p>
                     </div>
                     <div className="main-title">
-                        <h3 className="split-collab">
+                        <AnimateTitle className="split-collab">
                             Choose Best Plan For <br />
                             Your Business
-                            <span>
+                            <span className="absolute">
                                 <img
                                     src={asset.text_shep_2}
                                     alt="text-shep-2"
                                 />
                             </span>
-                        </h3>
+                        </AnimateTitle>
                     </div>
                 </div>
                 <div className="plan-wrapper">

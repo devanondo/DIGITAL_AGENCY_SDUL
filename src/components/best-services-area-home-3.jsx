@@ -1,4 +1,7 @@
 import { asset } from '../assets/assets'
+import RevelImageAnimation from './shared/gsap/reveal-image'
+import SectionSlideUp from './shared/gsap/slide-up'
+import AnimateTitle from './shared/gsap/split-collab'
 
 const Best_Services_Area_Home_3 = () => {
     return (
@@ -6,13 +9,10 @@ const Best_Services_Area_Home_3 = () => {
             <div className="container">
                 <div className="row align-items-center">
                     <div className="col-xl-6 col-lg-5">
-                        <div className="best-services-banner vre-reveal-one">
-                            <img
-                                src={asset.best_services_banner}
-                                alt="VRE"
-                                className="vre-reveal-image-one"
-                            />
-                        </div>
+                        <RevelImageAnimation
+                            image={asset.best_services_banner}
+                            className="best-services-banner vre-reveal-one"
+                        />
                     </div>
                     <div className="col-xl-5 col-lg-6 offset-xl-1 offset-lg-1">
                         <div className="best-services-wrapper">
@@ -21,15 +21,15 @@ const Best_Services_Area_Home_3 = () => {
                                     <p>Why Choose Us</p>
                                 </div>
                                 <div className="main-title">
-                                    <h3 className="split-collab">
+                                    <AnimateTitle className="split-collab">
                                         Providing The <span>Best </span>
                                         <br />
                                         Services
-                                    </h3>
+                                    </AnimateTitle>
                                 </div>
                             </div>
                             <div className="best-services-inner">
-                                <div className="best-services-item">
+                                <SectionSlideUp className="best-services-item">
                                     <div className="best-services-icon">
                                         <span>
                                             <svg
@@ -61,8 +61,8 @@ const Best_Services_Area_Home_3 = () => {
                                             faucibus. Proin.
                                         </p>
                                     </div>
-                                </div>
-                                <div className="best-services-item">
+                                </SectionSlideUp>
+                                <SectionSlideUp className="best-services-item">
                                     <div className="best-services-icon">
                                         <span>
                                             <svg
@@ -94,8 +94,8 @@ const Best_Services_Area_Home_3 = () => {
                                             faucibus. Proin.
                                         </p>
                                     </div>
-                                </div>
-                                <div className="best-services-item">
+                                </SectionSlideUp>
+                                <SectionSlideUp className="best-services-item">
                                     <div className="best-services-icon">
                                         <span>
                                             <svg
@@ -127,7 +127,7 @@ const Best_Services_Area_Home_3 = () => {
                                             faucibus. Proin.
                                         </p>
                                     </div>
-                                </div>
+                                </SectionSlideUp>
                             </div>
                         </div>
                     </div>

@@ -6,7 +6,7 @@ import SplitType from 'split-type'
 // Register ScrollTrigger plugin
 gsap.registerPlugin(ScrollTrigger)
 
-const AnimateTitle = ({ children, className }) => {
+const AnimateTitle = ({ children, className, tag }) => {
     const textRef = useRef(null)
 
     useEffect(() => {
@@ -46,6 +46,14 @@ const AnimateTitle = ({ children, className }) => {
 
         addAnimation()
     }, [])
+
+    if (tag === 'h2') {
+        return (
+            <h2 ref={textRef} className={`${className} split-collab`}>
+                {children}
+            </h2>
+        )
+    }
     return (
         <h3 ref={textRef} className={`${className} split-collab`}>
             {children}

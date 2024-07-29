@@ -1,4 +1,6 @@
 import { asset } from '../assets/assets'
+import SectionSlideDown from './shared/gsap/slide-down'
+import AnimateTitle from './shared/gsap/split-collab'
 
 const Blog_Area_Home_3 = () => {
     return (
@@ -19,17 +21,17 @@ const Blog_Area_Home_3 = () => {
                         <p>OUR LATEST BLOGS</p>
                     </div>
                     <div className="main-title">
-                        <h3 className="split-collab">
+                        <AnimateTitle className="split-collab">
                             Empowering Brands With <br />
                             Digital Brilliance
-                            <span>
+                            <span className="absolute">
                                 <img src={asset.text_shep_2} alt="" />
                             </span>
-                        </h3>
+                        </AnimateTitle>
                     </div>
                 </div>
                 <div className="blog-area-wrapper">
-                    <div className="row">
+                    <SectionSlideDown className="row">
                         <div className="col-xl-4 col-lg-4">
                             <div className="blog-inner vre-slide-down-gsap">
                                 <h5 className="font-size-1-24">
@@ -447,7 +449,7 @@ const Blog_Area_Home_3 = () => {
                                 </div>
                             </div>
                         </div>
-                    </div>
+                    </SectionSlideDown>
                 </div>
             </div>
         </section>

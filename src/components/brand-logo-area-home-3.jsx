@@ -1,8 +1,10 @@
+import SectionSlideUp from './shared/gsap/slide-up'
+
 const Brand_Logo_Area_home_3 = () => {
     return (
         <div className="brand-logo-area-home-2 brand-logo-area-home-3">
             <div className="container">
-                <div className="brand-logo-wrapper">
+                <SectionSlideUp className="brand-logo-wrapper">
                     <div className="brand-logo-inner vre-slide-up-gsap">
                         <a href="#">
                             <svg
@@ -431,7 +433,7 @@ const Brand_Logo_Area_home_3 = () => {
                             </svg>
                         </a>
                     </div>
-                </div>
+                </SectionSlideUp>
             </div>
         </div>
     )

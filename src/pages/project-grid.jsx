@@ -1,6 +1,7 @@
 import { asset } from '../assets/assets'
 import Breadcrumb from '../components/shared/breadcrumb'
 import Footer from '../components/shared/footer'
+import RevelImageTextAnimation from '../components/shared/gsap/reveal-image-text'
 import Navbar from '../components/shared/navbar'
 
 const Project_Grid = () => {
@@ -37,12 +38,10 @@ const Project_Grid = () => {
                     <div className="offer-wrapper">
                         <div className="row justify-content-center project-grid-active">
                             <div className="col-xl-4 col-lg-4 col-md-6">
-                                <div className="offer-inner vre-reveal-one three four">
-                                    <img
-                                        src={asset.offer_1_home_3}
-                                        alt="VRE"
-                                        className="vre-reveal-image-one"
-                                    />
+                                <RevelImageTextAnimation
+                                    image={asset.offer_1_home_3}
+                                    className="offer-inner vre-reveal-one three four"
+                                >
                                     <div className="offer-name">
                                         <h5 className="font-size-1-24">
                                             <a href="project-details.html">
@@ -53,15 +52,13 @@ const Project_Grid = () => {
                                             <i className="fa-solid fa-arrow-right"></i>
                                         </span>
                                     </div>
-                                </div>
+                                </RevelImageTextAnimation>
                             </div>
                             <div className="col-xl-4 col-lg-4 col-md-6 cat-2 cat-3">
-                                <div className="offer-inner vre-reveal-one">
-                                    <img
-                                        src={asset.offer_2_home_3}
-                                        alt="VRE"
-                                        className="vre-reveal-image-one"
-                                    />
+                                <RevelImageTextAnimation
+                                    image={asset.offer_2_home_3}
+                                    className="offer-inner vre-reveal-one three four"
+                                >
                                     <div className="offer-name">
                                         <h5 className="font-size-1-24">
                                             <a href="project-details.html">
@@ -72,15 +69,13 @@ const Project_Grid = () => {
                                             <i className="fa-solid fa-arrow-right"></i>
                                         </span>
                                     </div>
-                                </div>
+                                </RevelImageTextAnimation>
                             </div>
                             <div className="col-xl-4 col-lg-4 col-md-6 cat-1 cat4 cat-2">
-                                <div className="offer-inner vre-reveal-one">
-                                    <img
-                                        src={asset.offer_3_home_3}
-                                        alt="VRE"
-                                        className="vre-reveal-image-one"
-                                    />
+                                <RevelImageTextAnimation
+                                    image={asset.offer_3_home_3}
+                                    className="offer-inner vre-reveal-one"
+                                >
                                     <div className="offer-name">
                                         <h5 className="font-size-1-24">
                                             <a href="project-details.html">
@@ -91,15 +86,13 @@ const Project_Grid = () => {
                                             <i className="fa-solid fa-arrow-right"></i>
                                         </span>
                                     </div>
-                                </div>
+                                </RevelImageTextAnimation>
                             </div>
                             <div className="col-xl-4 col-lg-4 col-md-6 cat-3">
-                                <div className="offer-inner vre-reveal-one">
-                                    <img
-                                        src={asset.item_1}
-                                        alt="VRE"
-                                        className="vre-reveal-image-one"
-                                    />
+                                <RevelImageTextAnimation
+                                    image={asset.offer_1_home_3}
+                                    className="offer-inner vre-reveal-one"
+                                >
                                     <div className="offer-name">
                                         <h5 className="font-size-1-24">
                                             <a href="project-details.html">
@@ -110,15 +103,13 @@ const Project_Grid = () => {
                                             <i className="fa-solid fa-arrow-right"></i>
                                         </span>
                                     </div>
-                                </div>
+                                </RevelImageTextAnimation>
                             </div>
                             <div className="col-xl-4 col-lg-4 col-md-6 cat-1 cat-2 cat-4">
-                                <div className="offer-inner vre-reveal-one">
-                                    <img
-                                        src={asset.item_2}
-                                        alt="VRE"
-                                        className="vre-reveal-image-one"
-                                    />
+                                <RevelImageTextAnimation
+                                    image={asset.offer_2_home_3}
+                                    className="offer-inner vre-reveal-one"
+                                >
                                     <div className="offer-name">
                                         <h5 className="font-size-1-24">
                                             <a href="project-details.html">
@@ -129,15 +120,13 @@ const Project_Grid = () => {
                                             <i className="fa-solid fa-arrow-right"></i>
                                         </span>
                                     </div>
-                                </div>
+                                </RevelImageTextAnimation>
                             </div>
                             <div className="col-xl-4 col-lg-4 col-md-6 cat-4 cat-2">
-                                <div className="offer-inner vre-reveal-one">
-                                    <img
-                                        src={asset.item_3}
-                                        alt="VRE"
-                                        className="vre-reveal-image-one"
-                                    />
+                                <RevelImageTextAnimation
+                                    image={asset.offer_2_home_3}
+                                    className="offer-inner vre-reveal-one"
+                                >
                                     <div className="offer-name">
                                         <h5 className="font-size-1-24">
                                             <a href="project-details.html">
@@ -148,7 +137,7 @@ const Project_Grid = () => {
                                             <i className="fa-solid fa-arrow-right"></i>
                                         </span>
                                     </div>
-                                </div>
+                                </RevelImageTextAnimation>
                             </div>
                         </div>
                     </div>

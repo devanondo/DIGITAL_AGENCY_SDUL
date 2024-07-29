@@ -1,6 +1,9 @@
 import { asset } from '../assets/assets'
 import Breadcrumb from '../components/shared/breadcrumb'
 import Footer from '../components/shared/footer'
+import SectionSlideDown from '../components/shared/gsap/slide-down'
+import SectionSlideUp from '../components/shared/gsap/slide-up'
+import AnimateTitle from '../components/shared/gsap/split-collab'
 import Navbar from '../components/shared/navbar'
 
 const Contact = () => {
@@ -23,7 +26,7 @@ const Contact = () => {
                 <div className="container">
                     <div className="row align-items-center">
                         <div className="col-xl-5 col-lg-5">
-                            <div className="contact-info-wrapper vre-slide-up-gsap">
+                            <SectionSlideUp className="contact-info-wrapper vre-slide-up-gsap">
                                 <div className="contact-info-inner">
                                     <div className="contact-icon">
                                         <span>
@@ -207,7 +210,7 @@ const Contact = () => {
                                 <span className="font-size-1-20">
                                     By 700+ logistics Customers
                                 </span>
-                            </div>
+                            </SectionSlideUp>
                         </div>
                         <div className="col-xl-6 col-lg-6 offset-lg-1 offset-xl-1">
                             <div className="form-wrapper">
@@ -216,52 +219,55 @@ const Contact = () => {
                                         <p>Need Any Help?</p>
                                     </div>
                                     <div className="main-title">
-                                        <h3 className="split-collab">
+                                        <AnimateTitle className="split-collab">
                                             Get in Touch With Us
-                                        </h3>
+                                        </AnimateTitle>
                                     </div>
                                 </div>
-                                <form
-                                    action="#"
-                                    className="vre-slide-down-gsap"
-                                >
-                                    <div className="input-item">
+
+                                <SectionSlideDown>
+                                    <form
+                                        action="#"
+                                        className="vre-slide-down-gsap"
+                                    >
+                                        <div className="input-item">
+                                            <input
+                                                type="text"
+                                                placeholder="Frist Name"
+                                            />
+                                            <input
+                                                type="text"
+                                                placeholder="Last Name"
+                                            />
+                                        </div>
+                                        <div className="input-item">
+                                            <input
+                                                type="text"
+                                                placeholder="Phone"
+                                            />
+                                            <input
+                                                type="email"
+                                                placeholder="Email Address"
+                                            />
+                                        </div>
+                                        <div className="input-item">
+                                            <input
+                                                type="text"
+                                                placeholder="Subject"
+                                            />
+                                            <input
+                                                type="text"
+                                                placeholder="Website"
+                                            />
+                                        </div>
+                                        <textarea placeholder="Message"></textarea>
                                         <input
-                                            type="text"
-                                            placeholder="Frist Name"
+                                            type="submit"
+                                            value="Send Message"
+                                            className="btn-primary-style btn-2 hero-info-btn btn-3 btn-4 btn-4-home-3"
                                         />
-                                        <input
-                                            type="text"
-                                            placeholder="Last Name"
-                                        />
-                                    </div>
-                                    <div className="input-item">
-                                        <input
-                                            type="text"
-                                            placeholder="Phone"
-                                        />
-                                        <input
-                                            type="email"
-                                            placeholder="Email Address"
-                                        />
-                                    </div>
-                                    <div className="input-item">
-                                        <input
-                                            type="text"
-                                            placeholder="Subject"
-                                        />
-                                        <input
-                                            type="text"
-                                            placeholder="Website"
-                                        />
-                                    </div>
-                                    <textarea placeholder="Message"></textarea>
-                                    <input
-                                        type="submit"
-                                        value="Send Message"
-                                        className="btn-primary-style btn-2 hero-info-btn btn-3 btn-4 btn-4-home-3"
-                                    />
-                                </form>
+                                    </form>
+                                </SectionSlideDown>
                             </div>
                         </div>
                     </div>
