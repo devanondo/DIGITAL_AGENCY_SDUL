@@ -17,6 +17,7 @@ import Blog_Details from '../pages/blog-details'
 import Project_Grid from '../pages/project-grid'
 import Project_Details from '../pages/project-details'
 import Contact from '../pages/contact'
+import TeamDetails from '../pages/team-details'
 
 const Routes = () => {
     const router = createBrowserRouter([
@@ -35,6 +36,10 @@ const Routes = () => {
         {
             path: '/team',
             element: <Team />,
+        },
+        {
+            path: '/team-details',
+            element: <TeamDetails />,
         },
         {
             path: '/faq',

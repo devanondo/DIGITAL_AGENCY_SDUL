@@ -1,5 +1,54 @@
 import { asset } from '../../assets/assets'
+import Accordion from '../shared/accordion/accordion-item'
 import AnimateTitle from '../shared/gsap/split-collab'
+
+const items = [
+    {
+        question: 'Why should I choose Springboard SEO?',
+        ans: (
+            <p className="font-size-1-16">
+                There are many variations of passages of available but the Ut
+                elit tellus <br /> luctus nec ullamcorper at mattis
+            </p>
+        ),
+    },
+    {
+        question: 'How long do search engine results last?',
+        ans: (
+            <p className="font-size-1-16">
+                There are many variations of passages of available but the Ut
+                elit tellus <br /> luctus nec ullamcorper at mattis
+            </p>
+        ),
+    },
+    {
+        question: 'Are first place rankings for competitive keywords possible?',
+        ans: (
+            <p className="font-size-1-16">
+                There are many variations of passages of available but the Ut
+                elit tellus <br /> luctus nec ullamcorper at mattis
+            </p>
+        ),
+    },
+    {
+        question: 'How much does search engine optimization cost?',
+        ans: (
+            <p className="font-size-1-16">
+                There are many variations of passages of available but the Ut
+                elit tellus <br /> luctus nec ullamcorper at mattis
+            </p>
+        ),
+    },
+    {
+        question: 'How can I take your service?',
+        ans: (
+            <p className="font-size-1-16">
+                There are many variations of passages of available but the Ut
+                elit tellus <br /> luctus nec ullamcorper at mattis
+            </p>
+        ),
+    },
+]
 
 const Faq_Area_One = () => {
     return (
@@ -51,88 +100,7 @@ const Faq_Area_One = () => {
                         <div className="col-xl-7 offset-xl-1 col-lg-7">
                             <div className="faq-inner">
                                 <div className="accordion-container">
-                                    <div className="accordion-item vre-slide-up-gsap">
-                                        <button className="accordion-header font-size-1-20">
-                                            Why should I choose Springboard SEO?{' '}
-                                            <span className="icon icon-1">
-                                                <i className="fa-solid fa-angle-right"></i>
-                                            </span>
-                                        </button>
-                                        <div className="accordion-content">
-                                            <p className="font-size-1-16">
-                                                There are many variations of
-                                                passages of available but the Ut
-                                                elit tellus <br /> luctus nec
-                                                ullamcorper at mattis
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div className="accordion-item vre-slide-up-gsap">
-                                        <button className="accordion-header font-size-1-20">
-                                            How long do search engine results
-                                            last?{' '}
-                                            <span className="icon icon-1">
-                                                <i className="fa-solid fa-angle-right"></i>
-                                            </span>
-                                        </button>
-                                        <div className="accordion-content">
-                                            <p className="font-size-1-16">
-                                                There are many variations of
-                                                passages of available but the Ut
-                                                elit tellus <br /> luctus nec
-                                                ullamcorper at mattis
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div className="accordion-item vre-slide-up-gsap">
-                                        <button className="accordion-header font-size-1-20">
-                                            Are first place rankings for
-                                            competitive
-                                            <span className="icon icon-1">
-                                                <i className="fa-solid fa-angle-right"></i>
-                                            </span>
-                                        </button>
-                                        <div className="accordion-content">
-                                            <p className="font-size-1-16">
-                                                There are many variations of
-                                                passages of available but the Ut
-                                                elit tellus <br /> luctus nec
-                                                ullamcorper at mattis
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div className="accordion-item vre-slide-up-gsap">
-                                        <button className="accordion-header font-size-1-20">
-                                            How much does search engine
-                                            <span className="icon icon-1">
-                                                <i className="fa-solid fa-angle-right"></i>
-                                            </span>
-                                        </button>
-                                        <div className="accordion-content">
-                                            <p className="font-size-1-16">
-                                                There are many variations of
-                                                passages of available but the Ut
-                                                elit tellus <br /> luctus nec
-                                                ullamcorper at mattis
-                                            </p>
-                                        </div>
-                                    </div>
-                                    <div className="accordion-item vre-slide-up-gsap">
-                                        <button className="accordion-header font-size-1-20">
-                                            How Can I Take Your Service ?
-                                            <span className="icon icon-1">
-                                                <i className="fa-solid fa-angle-right"></i>
-                                            </span>
-                                        </button>
-                                        <div className="accordion-content">
-                                            <p className="font-size-1-16">
-                                                There are many variations of
-                                                passages of available but the Ut
-                                                elit tellus <br /> luctus nec
-                                                ullamcorper at mattis
-                                            </p>
-                                        </div>
-                                    </div>
+                                    <Accordion items={items} />
                                 </div>
                             </div>
                         </div>

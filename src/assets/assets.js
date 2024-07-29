@@ -96,6 +96,9 @@ import team_1_home_2 from './images/home-2/team-1-home-2.png'
 import team_2_home_2 from './images/home-2/team-2-home-2.png'
 import team_3_home_2 from './images/home-2/team-3-home-2.png'
 
+import team_details_1 from './images/team-details/team-details-1.png'
+import team_details_2 from './images/team-details/team-details-2.png'
+
 import subscribe_bg_home_2 from './images/home-2/subscribe-bg-home-2.png'
 import subscribe_shep_1_home_2 from './images/home-2/subscribe-shep-1-home-2.png'
 import subscribe_shep_2_home_2 from './images/home-2/subscribe-shep-2-home-2.png'
@@ -241,6 +244,9 @@ export const asset = {
     team_1_home_2,
     team_2_home_2,
     team_3_home_2,
+
+    team_details_1,
+    team_details_2,
 
     subscribe_bg_home_2,
     subscribe_shep_1_home_2,
